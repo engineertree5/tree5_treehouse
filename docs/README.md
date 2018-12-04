@@ -1,18 +1,17 @@
-# tree5_treehouse
+# Treehouse5 - Working With GeekTools
 
-# GeekTool How-GeekTo
-
-Before I begin explaining how I customized my desktop background I'd like to preface with why I'm doing what I"m doing. The main reason behind me sharing this "how-to" is for me to open up and share my tech journey. I'm also doing this so anyone new or old can follow along. Although there are many places to get started with how-to program. I'm hopping I can help someone through this site. If anything, this will be a pretty neat digital journal to look back on.
-
-Now that the sentimental piece is out of the way we can start the requirements. 
+<figure class="thumbnails">
+    <img src="media/img/desktopshot.jpeg" alt="Screenshot of Desktop" title="My Desktop">
+</figure>
 
 **REQUIREMENTS (Mac OSX)**
 * A working computer (any OS will do)
-* 101 understanding of mac terminal
+* basic understanding of mac terminal
 * Willingness to fail & learn
-##Desktop WallPaper
 
-The wallpaper I designed myself. The images I used came from [Mustafah Abdulaziz](http://www.mustafahabdulaziz.com). If you'd like to use this wallpaper you can download it [here]()
+## Desktop WallPaper
+
+The wallpaper I designed myself. The images I used came from [Mustafah Abdulaziz](http://www.mustafahabdulaziz.com). If you'd like to use this wallpaper you can download it [here](https://google.com)
 
 ## Date & Uptime
 
@@ -20,7 +19,7 @@ The date and update was generated using bash commands via the terminal. it was r
 
     $ date '+%A %d'
 
-# Computer Uptime
+# Computer Uptime {docsify-ignore}
 
 This was achieved through a lot of trial and error with understanding the `awk` command and manipulating txt. I was able to print the uptime of my computer by min, hr, and days by typing the following:
 
@@ -44,3 +43,12 @@ from the uptime man page - The uptime utility displays the current time, the len
 
     Template for sub() function:
     sub(regexp,replstring,mystring)
+
+
+---------------
+###FIX LATER
+## GeekTool How-GeekTo
+
+Before I begin explaining how I customized my desktop background I'd like to preface with why I'm doing what I"m doing. The main reason behind me sharing this "how-to" is for me to open up and share my tech journey. I'm also doing this so anyone new or old can follow along. Although there are many places to get started with how-to program. I'm hopping I can help someone through this site. If anything, this will be a pretty neat digital journal to look back on.
+
+Now that the sentimental piece is out of the way we can start the requirements. 

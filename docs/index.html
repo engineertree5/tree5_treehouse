@@ -16,11 +16,22 @@
       //-------------------------
       name: 'Treehouse5',
       repo: 'https://github.com/engineertree5/tree5_treehouse',
-      loadSidebar: true,
-      loadNavbar: true,
-      mergeNavbar: true,
+
       formatUpdated: '{MM}/{DD} {HH}:{mm}',
-      auto2top: true,
+      
+      
+      // NAVIGATION
+            // -----------------------------------------------------------------
+      alias: {
+          '.*?/changelog': 'https://unpkg.com/docsify-themeable/CHANGELOG.md',
+     },
+     auto2top: true,
+     loadSidebar: true,
+     loadNavbar: true,
+     mergeNavbar: true,
+     maxLevel   : 3,
+     subMaxLevel: 3,
+
       // PLUGINS
       // -----------------------------------------------------------------
       executeScript: true,
