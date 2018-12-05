@@ -1,6 +1,6 @@
 # Treehouse5 - Working With GeekTools
 
-<figure class="thumbnails">
+<figure>
     <img src="media/img/desktopshot.jpeg" alt="Screenshot of Desktop" title="My Desktop">
 </figure>
 
