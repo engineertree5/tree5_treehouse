@@ -1,13 +1,13 @@
-##TERMINAL HELPER DOC
+## TERMINAL HELPER DOC
 
-#python location
+## python location
 #!/usr/local/bin/python3
 
-#setting up python3 environment
+## setting up python3 environment
 /Users/MisterFili/Documents/GitHub/discovery/vspie/azpieEnv
 source /bin/activate
 
-#Getting help with functions
+## Getting help with functions
 example: python -m pydoc os.system
 
 Method to add something to your *PATH*:
@@ -17,10 +17,10 @@ display the disk usage of all the directores and subdiretories
 in current directory sorted by size:
 	du -h * | sort -sh
 
-#basiic keyboard functions
+## basiic keyboard functions
 200~http://en.obins.net/user-manual#1
 
-#Annie Pro Keyboard I shortcuts and such
+## Annie Pro Keyboard I shortcuts and such
 https://www.reddit.com/r/AnnePro/comments/6wwsig/a_comprehensive_amateur_guide_to_the_anne_pro/
 * issues with the command key or 'alt' key
     * Pressing Fn then Cmd locks the Cmd key out. You have to press Cmd then Fn then an arrow. Pressing Fn then Cmd will unlock it.
