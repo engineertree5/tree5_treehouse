@@ -1,5 +1,8 @@
 ##TERMINAL HELPER DOC
 
+#link for mac support with OS
+https://support.apple.com/en-us/HT201372
+
 #python location
 #!/usr/local/bin/python3
 
