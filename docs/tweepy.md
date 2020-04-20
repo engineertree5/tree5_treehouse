@@ -2,7 +2,8 @@
 <figure>
     <img src="media/img/tbot.jpg" alt="tbot image" title="tbot image">
 </figure>
-> I'm assuming you have a basic understanding of how a python program is created.py   
+
+!> I'm assuming you have a basic understanding of how a python program is created.py   
 
 Why `Tweepy`? I chose to use the python module tweepy because I wanted to tinker with python and create something that I would use in my everyday life. I find learning through a personal project is a great way to pickup a skill and `Tweepy` did just that for me. For this post I'm going to get you familiar with the the bot I wrote using `Tweepy` to respond to tweets while I'm away on vacation. Let me stop all this jaw jabbering and get into the technicals of how this all works.
 
@@ -23,7 +24,7 @@ Another good source is from `realpython.com`. [Following this](https://realpytho
         try:
             username = tweet.user.screen_name
             tweet_id = tweet.id_str
-            away_msg = f"@{username} Seems to me that you are looking for my creator, Monsieur Fili. He is probably at where ya sista went... If urgent, please send m'Lord a text msg. standard rates apply."
+            away_msg = f"@{username} Seems that you are looking for my creator, Monsieur Fili. He is currently Out of the office... May I help you with some music in his absence. Reply to me with an artist name wrapped in double quotes \"artist name\" "
             
         except tweepy.TweepError as e:
             print(e.reason)
@@ -70,7 +71,7 @@ For me to find out which users @'ed me. I need to use Tweepy's `Cursor` object. 
     tweets_mentioned = 1
     for tweet in tweepy.Cursor(api.search, search_for).items(tweets_mentioned):
 ```
-All of this the results will be stored in a for loop. This `for loop` will let me respond to more than one person @'ing me at a time. I'm looping through the results so I can respond to X amount of users in a batch like manner. The next few lines I'm assigning the results of my search to variables(`name`, `tweet_id`, & `away message`). Then setting up an exception to catch any errors that may appear within the `for loop`.
+All of the results of the search will be stored in a for loop. This `for loop` will let me respond to more than one person @'ing me at a time. I'm looping through the results so I can respond to X amount of users in a batch like manner. The next few lines I'm assigning the results of my search to variables(`name`, `tweet_id`, & `away message`). Then setting up an exception to catch any errors that may appear within the `for loop`.
 
 
 ```python
@@ -114,3 +115,64 @@ Looks like we have reached the end of our logic roadmap. We should have a bot re
 * Sending snarky responses if someone responds multiple times to the bot under a certain time frame. 
 * Cycling through your frends list and tweeting random information your followers love you for. 
 * Scraping twitter for a #hashtag you started and saving respones to a document to prove your're a trend setter. 
+
+### Class of Dicts 
+I figured I'd add more detail to this snippet of code so newbies can get a better understanding HOW the code actually works. Knowing how something works will only make you a better troubleshooter. 
+
+So, We have this `for loop` which will pull in users who've @'ed me. But how did I know `tweet.user.screen_name` was an attribute? There are a few ways to go about this, and that is the beauty of programming. Many different ways to get to the finish line. I'm going to use methods that are sitting within python3. First we need to know what type of object we are dealing with here. so lets call the type method to get a better look at what we are dealing with. 
+
+```python
+    search_for = "@MisterFili"
+    tweets_mentioned = 1
+    for tweet in tweepy.Cursor(api.search, search_for).items(tweets_mentioned):
+        print(type(tweet))
+------------
+#RESPONSE
+<class 'tweepy.models.Status'>
+```
+Ok, so we know the properties of `tweet` are the type of model class `<class 'tweepy.models.Status'>`. The model class defines our search response as a datastore entity. So we are going to look at the properties of the model class, `tweet`,  by using the [`vars([object])`](https://docs.python.org/2/library/functions.html#vars). This method will "Return the __dict__ attribute for a module, class, instance, or any other object with a __dict__ attribute." This means that the object model `tweet` datastore is defined by a dict. 
+
+```python
+    search_for = "@MisterFili"
+    tweets_mentioned = 1
+    for tweet in tweepy.Cursor(api.search, search_for).items(tweets_mentioned):
+        checking = vars(tweet)
+        print(type(checking))
+````
+If you printed the output you should see that the data returned is a dict. Its a messy dict, so lets clean it up a little so we can look at it with some respect. Lets toss it in a for loop and seperate the items. 
+
+```python
+### RESPONSE
+    search_for = "@MisterFili"
+    tweets_mentioned = 1
+    for tweet in tweepy.Cursor(api.search, search_for).items(tweets_mentioned):
+        checking = vars(tweet)
+        for i in checking:
+            print(i)
+    ...
+    truncated
+    entities
+    metadata
+    source
+    source_url
+    in_reply_to_status_id
+    in_reply_to_status_id_str
+    in_reply_to_user_id
+    in_reply_to_user_id_str
+    in_reply_to_screen_name
+    author
+    user
+    ....
+```
+To look at the `keys` of the dict. We will need to use dot notation to pick through the `keys` and see what data is within the dict. You may have to do this a few times to get what information you need. To find the users screen-name you have to look at `tweet.user`. Then you will find a `name` and `screen_name` attribure. I'm looking to reply back to the user so I used `screen_name` username = tweet.user.screen_name
+
+```python
+    
+    search_for = "@MisterFili"
+    tweets_mentioned = 1
+    for tweet in tweepy.Cursor(api.search, search_for).items(tweets_mentioned):
+        try:
+            username = tweet.user.screen_name
+            tweet_id = tweet.id_str
+            away_msg = f"@{username} Seems to me that you are looking for my creator, Monsieur Fili. He is probably at where ya sista went... If urgent, please send m'Lord a text msg. standard rates apply."
+```
