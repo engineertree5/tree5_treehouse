@@ -71,7 +71,7 @@ def artist_info():
     album_names = []
     album_hyperlinks = []
     search_for = "@FiliTheTester"
-    tweets_mentioned = 1
+    tweets_mentioned = 5
     # for tweet in tweepy.Cursor(api.search, search_for).items(tweets_mentioned):
 
     for tweet in tweepy.Cursor(api.search, search_for).items(tweets_mentioned):
@@ -105,13 +105,16 @@ def artist_info():
 
         elif len(response_list)  == 0 :
             print(f'user tweeted:\n{user_response}')
-            print(f'{screenname} did not wrap the response in quotes. No artist found')
-            break
+            status_update = f'@{screenname} did not wrap the response in quotes. No artist found'
+            print(status_update)
+            continue
 
         elif len(response_list) > 2:
             print(f'user tweeted:\nf{user_response}')
-            print(f'I can only search 1 artist at a time, {screenname}. The next version of me will be better')
-            break
+            status_update = f'I can only search 1 artist at a time, @{screenname}. The next version of me will be better'
+            api.update_status(status=status_update, in_reply_to_status_id=tweet.id)
+            print(status_update)
+            continue
         ### return a random artist album, link, and image
         result = sp.search(user_artist) #search query name var
         #Extract Artist's uri
@@ -124,54 +127,77 @@ def artist_info():
         #while loop to check if artist name matches properly
         count = 0
         print(f"ARTIST NAME: {artist_name}\nUSER ARIST {user_artist}\n")
-        while artist_name.lower() != user_artist.lower():
-            count = count + 1 
-            print(f"not track{count}")
-            print("printing count", count)
-            tempname = result['tracks']['items'][count]['artists'][0]['name']
-            artist_name = tempname.lower()
-            print(f"{artist_name} does not match {user_artist}")
-            artist_uri = result['tracks']['items'][count]['artists'][0]['uri']
-            if count > 10:
-                with open(cheapDB, 'r') as file:
-                    rd = file.read().splitlines()
-                    # using the enumerate method we can create an indexed list
-                    # we then seperate the count(i) and value(line) and look to see
-                    # if tweet_id is found in the file. if so, ignore the tweet
-                    for i, line in enumerate(rd):
-                        if tweet_id == line:
-                            old_tweet.append(tweet_id)
+        try:
+            while artist_name.lower() != user_artist.lower():
+                count = count + 1 
+                print(f"not track{count}")
+                print("printing count", count)
+                tempname = result['tracks']['items'][count]['artists'][0]['name']
+                artist_name = tempname.lower()
+                print(f"{artist_name} does not match {user_artist}")
+                artist_uri = result['tracks']['items'][count]['artists'][0]['uri']
+
+                if count > 10:
+                    with open(cheapDB, 'r') as file:
+                        rd = file.read().splitlines()
+                        # using the enumerate method we can create an indexed list
+                        # we then seperate the count(i) and value(line) and look to see
+                        # if tweet_id is found in the file. if so, ignore the tweet
+                        for i, line in enumerate(rd):
+                            if tweet_id == line:
+                                old_tweet.append(tweet_id)
+                                continue
+                        if tweet_id in old_tweet:
+                            print(f"old tweet from: @{screenname}\n", tweet.text)
                             continue
-                    if tweet_id in old_tweet:
-                        print(f"old tweet from: @{screenname}\n", tweet.text)
-                        continue
-                    else:
-                        with open(cheapDB, "a") as f:
-                    #if tweet_id exist in file skip writing to file
-                    #else write to file
-                            f.write(f"{tweet_id}\n")
-                            print(f"\nAdding tweet id: {tweet_id} to file for tracking")
-                            print("\tUPDATE STATUS\n")
-                            error_status_update = f"There was an issue processing your request. Try again later."
-                            api.update_status(status=error_status_update, in_reply_to_status_id=tweet.id)
-                break
+                        else:
+                            with open(cheapDB, "a") as f:
+                        #if tweet_id exist in file skip writing to file
+                        #else write to file
+                                f.write(f"{tweet_id}\n")
+                                print(f"\nAdding tweet id: {tweet_id} to file for tracking")
+                                print("\tUPDATE STATUS\n")
+                                error_status_update = f"{screenname} There was an issue processing your request. Try again later."
+                                api.update_status(status=error_status_update, in_reply_to_status_id=tweet.id)
+        except IndexError as e:
+                error = e
+                error_status_update = f"@{screenname} There was a problem on the back end... \"{error}\".\nsearching for {user_artist} but found {artist_name}. New feature(s) to handles this coming soon!"
+                ######## WRITE TO DB FUNCTION
+                api.update_status(status=error_status_update, in_reply_to_status_id=tweet.id)
+                print(error_status_update)
+                pass    
 
         print(f"\tEXITED WHILE LOOOP\n ARTIST IS {artist_name}")
         sp_albums = sp.artist_albums(artist_uri, album_type='album')
         for i in range(len(sp_albums['items'])):
-            album_names.append(sp_albums['items'][i]['name'])
-            album_uris.append(sp_albums['items'][i]['uri'])        
-            album_coverart.append(sp_albums['items'][i]['images'][0]['url'])
-            album_hyperlinks.append(sp_albums['items'][i]['external_urls']['spotify'])
-        
+            try:
+                album_names.append(sp_albums['items'][i]['name'])
+                album_uris.append(sp_albums['items'][i]['uri'])        
+                album_coverart.append(sp_albums['items'][i]['images'][0]['url'])
+                album_hyperlinks.append(sp_albums['items'][i]['external_urls']['spotify'])
+            except IndexError as e:
+                print(e)
+                continue
         hyperlink_list = []
         list_album_names = []
         # print(random.choice(album_coverart))
         for i in album_names:
             list_album_names.append(i)
+        for i in album_hyperlinks:
+            try:
+                hyperlink_list.append(i)
+            except IndexError as e:
+                print(e)
+                break
 
         random_selection = random.choice(hyperlink_list)
-        status_update = f"@{screenname} Here is something you can listen to from {user_artist} while you wait. {random_selection}"
+        if artist_name.lower() == user_artist.lower():
+            print(f"artist name: {artist_name}\nuser_artist: {user_artist}")
+            status_update = f"@{screenname} Here is something you can listen to from {user_artist} while you wait. {random_selection}"
+            print(status_update)
+            continue
+        else:
+            pass
         with open(cheapDB, 'r') as file:
             rd = file.read().splitlines()
             # using the enumerate method we can create an indexed list
