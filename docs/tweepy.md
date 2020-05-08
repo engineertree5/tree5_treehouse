@@ -117,9 +117,9 @@ Looks like we have reached the end of our logic roadmap. We should have a bot re
 * Scraping twitter for a #hashtag you started and saving respones to a document to prove your're a trend setter. 
 
 ### Class of Dicts 
-I figured I'd add more detail to this snippet of code so newbies can get a better understanding HOW the code actually works. Knowing how something works will only make you a better troubleshooter. 
+I figured I'd explain more about this snippet of code so newbies can get a better understanding of HOW the code actually works. Knowing how something works will only make you a better troubleshooter. 
 
-So, We have this `for loop` which will pull in users who've @'ed me. But how did I know `tweet.user.screen_name` was an attribute? There are a few ways to go about this, and that is the beauty of programming. Many different ways to get to the finish line. I'm going to use methods that are sitting within python3. First we need to know what type of object we are dealing with here. so lets call the type method to get a better look at what we are dealing with. 
+So, We have this `for loop` which will pull in users who've @'ed me. But how did I know `tweet.user.screen_name` was an attribute? There are a few ways to go about this, and that is the beauty of programming. Many different ways to get to the finish line. I'm going to use methods that are builtin within python3.  
 
 ```python
     search_for = "@MisterFili"
@@ -130,7 +130,7 @@ So, We have this `for loop` which will pull in users who've @'ed me. But how did
 #RESPONSE
 <class 'tweepy.models.Status'>
 ```
-Ok, so we know the properties of `tweet` are the type of model class `<class 'tweepy.models.Status'>`. The model class defines our search response as a datastore entity. So we are going to look at the properties of the model class, `tweet`,  by using the [`vars([object])`](https://docs.python.org/2/library/functions.html#vars). This method will "Return the __dict__ attribute for a module, class, instance, or any other object with a __dict__ attribute." This means that the object model `tweet` datastore is defined by a dict. 
+First we need to know what type of object we are dealing with here. so lets call the `type` method to get a better look at what we are dealing with. Ok, so we know the properties of `tweet` are the type of model class `<class 'tweepy.models.Status'>`. The model class defines our search response as a datastore entity. So we are going to look at the properties of the model class, `tweet`,  by using the [`vars([object])`](https://docs.python.org/2/library/functions.html#vars). This method will "Return the __dict__ attribute for a module, class, instance, or any other object with a __dict__ attribute." This means that the object model `tweet` datastore is defined by a dict. 
 
 ```python
     search_for = "@MisterFili"

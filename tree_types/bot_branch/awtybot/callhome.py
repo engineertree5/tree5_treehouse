@@ -9,7 +9,6 @@ auth.set_access_token(access_token, access_secret)
 
 # main program will be taking in questions and 
 
-# 1. would you like to send a tweet as a bot [yes | no ]
 # 2. is there anything you would like to make note of [ yes | no ]
 # 3. ?
 
@@ -17,21 +16,21 @@ auth.set_access_token(access_token, access_secret)
 api = tweepy.API(auth)
 user = api.get_user('lordfili')
 
-
-def user_feels():
-    feels = input("what would you like to twwet?")
-    return feels
-def update_status(n):
-    # using tweepy API to update status
-
-    print(n)
-    # try:
-    #     api.update_status(status=statement)
+def update_status():
     
-    # except tweepy.TweepError as e:
-    #     print(e.reason)
-    #     print(e.api_code)
-    #     print(e.response.text)
+    feels = input("TYPE YOUR TWEET BELOW:\n")
+    # using tweepy API to update status
+    try:
+        api.update_status(status=feels)
+        print('tweet sent!\n', feels)
+    
+    except tweepy.TweepError as e:
+        print(e.reason)
+        print(e.api_code)
+        print(e.response.text)
 
+def main():
+    update_status()
 
-update_status(user_feels())
+if __name__ == "__main__":
+    main()
