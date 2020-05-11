@@ -24,25 +24,9 @@ old_tweet = []
 twitter_fan = "MisterFili"
 cheapDB = "/Users/MisterFili/Documents/github_projects/tweetbot/basiclist.txt"
 
-def OOTO():
-    
-    search_for = "@MisterFili"
-    tweets_mentioned = 5
+def tweetcheck(tweet_id, screenname, msg):
 
-    for tweet in tweepy.Cursor(api.search, search_for).items(tweets_mentioned):
-        try:
-            username = tweet.user.screen_name
-            tweet_id = tweet.id_str
-            away_msg = f"@{username} Seems that you are looking for my creator, Monsieur Fili. He is currently Out of the office... May I help you with some music in his absence? Reply to me with an artist name wrapped in double quotes \"artist name\""
-        
-        #look at previously tweeted user @ names. If name is within last 5 @'s respond a certain way
-        except tweepy.TweepError as e:
-            print(e.reason)
-
-        except StopIteration:
-            break
-        print(username)
-        with open(cheapDB, 'r') as file:
+    with open(cheapDB, 'r') as file:
             rd = file.read().splitlines()
             # using the enumerate method we can create an indexed list
             # we then seperate the count(i) and value(line) and look to see
@@ -52,18 +36,47 @@ def OOTO():
                     old_tweet.append(tweet_id)
                     continue
             if tweet_id in old_tweet:
-                print(f"old tweet from: @{username}\n", tweet.text)
-                continue
+                print(f"old tweet from: @{screenname}")
+                # continue
             else:
                 with open(cheapDB, "a") as f:
                 #if tweet_id exist in file skip writing to file
                 #else write to file
                     f.write(f"{tweet_id}\n")
-                    print(f"\nAdding tweet id: {tweet_id} to file for tracking")
-                    print("update status")
-                    api.update_status(status=away_msg, in_reply_to_status_id=tweet.id)
-                    print(f"@{username} said:\n{tweet.text} \n")
-# OOTO()
+                    print(f"\nNew Tweet found\nAdding tweet id: {tweet_id} to file for tracking")
+                    print("\n####\nUPDATING STATUS\n####")
+                    print(f"\nRESPONDING TO TWEET")
+                    print(msg)
+                    # api.update_status(status=msg, in_reply_to_status_id=tweet_id)
+                    return 0
+                    
+                    
+                    
+            
+
+def OOTO():
+    
+    search_for = "@MisterFili"
+    tweets_mentioned = 2
+
+    for tweet in tweepy.Cursor(api.search, search_for).items(tweets_mentioned):
+        try:
+            screenname = tweet.user.screen_name
+            tweet_id = tweet.id_str
+            msg = f"@{screenname} Seems that you are looking for my creator, Monsieur Fili. He is currently Out of the office... May I help you with some music in his absence? Reply to me with an artist name wrapped in double quotes \"artist name\""
+        
+        #look at previously tweeted user @ names. If name is within last 5 @'s respond a certain way
+        except tweepy.TweepError as e:
+            print(e.reason)
+
+        except StopIteration:
+            break
+        if tweetcheck(tweet_id, screenname, msg) == 0:
+            print(f"@{screenname} said:\n{tweet.text} \n")
+            print("Status Updated")
+        else:
+            print("\nAlready responsed to this tweet. BYE!")
+        
 
 def artist_info():
     sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager) #spotify object to access API
@@ -71,14 +84,9 @@ def artist_info():
     album_names = []
     album_hyperlinks = []
     search_for = "@FiliTheTester"
-    tweets_mentioned = 5
-    # for tweet in tweepy.Cursor(api.search, search_for).items(tweets_mentioned):
+    tweets_mentioned = 8
 
     for tweet in tweepy.Cursor(api.search, search_for).items(tweets_mentioned):
-        # checking = vars(tweet)
-        # for i in checking:
-        #     print(i)
-        # print(tweet.user)
         try:
             screenname = tweet.user.screen_name
             tweet_id = tweet.id_str
@@ -89,8 +97,7 @@ def artist_info():
             user_response = str(special_quote1).replace("”", '"')
             # The split() method splits a string into a list.
             # the [1::2] is a slicing which extracts odd values | pull everything between double quotes
-            response_list = user_response.split('"')[1::2] 
-            
+            response_list = user_response.split('"')[1::2]   
             print(f"User is looking for {response_list}")
 
         except tweepy.TweepError as e:
@@ -105,15 +112,24 @@ def artist_info():
 
         elif len(response_list)  == 0 :
             print(f'user tweeted:\n{user_response}')
-            status_update = f'@{screenname} did not wrap the response in quotes. No artist found'
-            print(status_update)
+            msg = f'@{screenname} did not wrap the response in quotes. No artist found'
+            print(msg)
+            if tweetcheck(tweet_id, screenname, msg) == 0:
+                print(f"@{screenname} said:\n{tweet.text} \n")
+                print("Status Updated")
+            else:
+                print("\nAlready responsed to this tweet. BYE!")
             continue
 
         elif len(response_list) > 2:
             print(f'user tweeted:\nf{user_response}')
-            status_update = f'I can only search 1 artist at a time, @{screenname}. The next version of me will be better'
-            api.update_status(status=status_update, in_reply_to_status_id=tweet.id)
-            print(status_update)
+            msg = f'I can only search 1 artist at a time, @{screenname}. The next version of me will be better'
+            if tweetcheck(tweet_id, screenname, msg) == 0:
+                print(f"@{screenname} said:\n{tweet.text} \n")
+                print("Status Updated")
+            else:
+                print("\nAlready responsed to this tweet. BYE!")            
+            print(msg)
             continue
         ### return a random artist album, link, and image
         result = sp.search(user_artist) #search query name var
@@ -138,32 +154,18 @@ def artist_info():
                 artist_uri = result['tracks']['items'][count]['artists'][0]['uri']
 
                 if count > 10:
-                    with open(cheapDB, 'r') as file:
-                        rd = file.read().splitlines()
-                        # using the enumerate method we can create an indexed list
-                        # we then seperate the count(i) and value(line) and look to see
-                        # if tweet_id is found in the file. if so, ignore the tweet
-                        for i, line in enumerate(rd):
-                            if tweet_id == line:
-                                old_tweet.append(tweet_id)
-                                continue
-                        if tweet_id in old_tweet:
-                            print(f"old tweet from: @{screenname}\n", tweet.text)
-                            continue
-                        else:
-                            with open(cheapDB, "a") as f:
-                        #if tweet_id exist in file skip writing to file
-                        #else write to file
-                                f.write(f"{tweet_id}\n")
-                                print(f"\nAdding tweet id: {tweet_id} to file for tracking")
-                                print("\tUPDATE STATUS\n")
-                                error_status_update = f"{screenname} There was an issue processing your request. Try again later."
-                                api.update_status(status=error_status_update, in_reply_to_status_id=tweet.id)
+                    msg = f"{screenname} There was an issue processing your request. Try again later."
+                    if tweetcheck(tweet_id, screenname, msg) == 0:
+                        print(f"@{screenname} said:\n{tweet.text} \n")
+                        print("Status Updated")
+                    else:
+                        print("\nAlready responsed to this tweet. BYE!")
+                    # with open(cheapDB, 'r') as file:
         except IndexError as e:
                 error = e
                 error_status_update = f"@{screenname} There was a problem on the back end... \"{error}\".\nsearching for {user_artist} but found {artist_name}. New feature(s) to handles this coming soon!"
                 ######## WRITE TO DB FUNCTION
-                api.update_status(status=error_status_update, in_reply_to_status_id=tweet.id)
+                # api.update_status(status=error_status_update, in_reply_to_status_id=tweet.id)
                 print(error_status_update)
                 pass    
 
@@ -193,32 +195,20 @@ def artist_info():
         random_selection = random.choice(hyperlink_list)
         if artist_name.lower() == user_artist.lower():
             print(f"artist name: {artist_name}\nuser_artist: {user_artist}")
-            status_update = f"@{screenname} Here is something you can listen to from {user_artist} while you wait. {random_selection}"
-            print(status_update)
+            msg = f"@{screenname} Here is something you can listen to from {user_artist} while you wait. {random_selection}"
+            print(msg)
             continue
         else:
             pass
-        with open(cheapDB, 'r') as file:
-            rd = file.read().splitlines()
-            # using the enumerate method we can create an indexed list
-            # we then seperate the count(i) and value(line) and look to see
-            # if tweet_id is found in the file. if so, ignore the tweet
-            for i, line in enumerate(rd):
-                if tweet_id == line:
-                    old_tweet.append(tweet_id)
-                    continue
-            if tweet_id in old_tweet:
-                print(f"old tweet from: @{screenname}\n", tweet.text)
-                continue
-            else:
-                with open(cheapDB, "a") as f:
-                #if tweet_id exist in file skip writing to file
-                #else write to file
-                    f.write(f"{tweet_id}\n")
-                    print(f"\nAdding tweet id: {tweet_id} to file for tracking")
-                    print("\tUPDATE STATUS\n")
-                    api.update_status(status=status_update, in_reply_to_status_id=tweet.id)
-                    print(f"@{screenname} said:\n{tweet.text} \n")
-                    print(status_update)
+        if tweetcheck(tweet_id, screenname, msg) == 0:
+            print(f"@{screenname} said:\n{tweet.text} \n")
+            print("Status Updated")
+        else:
+            print("\nAlready responsed to this tweet. BYE!")
+        # with open(cheapDB, 'r') as file:
+def main():
+    print("######\nLOOP START\n####")
+    artist_info()
 
-artist_info()
+if __name__ == "__main__":
+    main()
