@@ -50,10 +50,6 @@ def tweetcheck(tweet_id, screenname, msg):
                     # api.update_status(status=msg, in_reply_to_status_id=tweet_id)
                     return 0
                     
-                    
-                    
-            
-
 def OOTO():
     
     search_for = "@MisterFili"
@@ -88,6 +84,7 @@ def artist_info():
 
     for tweet in tweepy.Cursor(api.search, search_for).items(tweets_mentioned):
         try:
+            print("######\nLOOP START\n####")
             screenname = tweet.user.screen_name
             tweet_id = tweet.id_str
             raw_user_response = tweet.text
@@ -207,7 +204,6 @@ def artist_info():
             print("\nAlready responsed to this tweet. BYE!")
         # with open(cheapDB, 'r') as file:
 def main():
-    print("######\nLOOP START\n####")
     artist_info()
 
 if __name__ == "__main__":
