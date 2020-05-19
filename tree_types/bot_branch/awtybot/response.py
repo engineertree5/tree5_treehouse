@@ -7,11 +7,9 @@ def response():
     if answer.lower() in 'yeah yes yep yea yup'.split():
         print('you typeed', answer)
         callhome.update_status()
-        # checking()
         #maybe add another function for something?
     elif answer == 'no' or 'NO':
         print("continue on")
-        # checking()
     else:
         print("response not accecpted")
 
