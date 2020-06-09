@@ -1,39 +1,34 @@
 import yfinance as yf
 import matplotlib.pyplot as plt
-import random
+from random import choice
+import csv
+from datetime import date
 
-def random_pick():
-    watchlist = ['MSFT', 'V', 'DLR', 'CONE', 'PING', 'AMD', 'O', 'BAM', 'DDOG', 'ADBE', 'NKE', 'CHWY', 'NOK']
-    stock_pick = random.choice(watchlist)
-    print(f'random stock pick from watchlist ${stock_pick}')
-    return stock_pick
-
-def pick_info(ticker):
-    company = yf.Ticker(ticker)
-    try:
-        rmp = company.info['regularMarketPrice']
-        print(f'${company.ticker}\nRegular market price: {rmp}')
-    except IndexError as e:
-        print(e)
+today = date.today()
+d1 = today.strftime("%Y/%m/%d")
+watchlist = ['MSFT', 'V', 'DLR', 'CONE', 'PING', 'AMD', 'O', 'BAM', 'DDOG', 'ADBE', 'NKE', 'CHWY', 'NOK']
     
-    return company
-
-
-def company_moving_average(company, days):
-    hist = company.history(period=f"{days}d")
-    count = 0
-    for i in range(0, days):
-        count += hist.iloc[i]['Close']
-    fiveDMA = count / days
-    print(f'Here is the {days} day Moving average for {company.ticker}: {fiveDMA}')
+def watchlist_moving_avearge(days, today):
+    for symbol in watchlist:
+        company = yf.Ticker(symbol)
+        hist = company.history(period=f"{days}d")
+        count = 0
+        for day in range(0, days):
+            count += hist.iloc[day]['Close']
+        temp = count / days
     # a 5-day simple moving average is the five-day sum of closing prices divided by five.
+        companyMA = f'%.2f' % (temp) #converting to 2 decimal points
+        print(f'Here is the {days} day Moving average for {company.ticker}: {companyMA}')
+        with open (f'/Users/MisterFili/Documents/GitHub/tree5_treehouse/tree_types/money_tree/yfinance/{company.ticker}.csv', 'a+', newline="") as csvfile:
+            fieldnames = ['DATE', 'Ticker', 'MA']
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerow({'DATE': today,  'Ticker': company.ticker, 'MA': companyMA})
+    print('check csv')
 
 def main():
     # is this the best way to call everything? 
-    ticker = random_pick()
-    company = pick_info(ticker)
-    company_moving_average(company, 5)
-    
+    watchlist_moving_avearge(5,d1)
 if __name__ == "__main__":
     main()
 
@@ -49,6 +44,7 @@ if __name__ == "__main__":
 # plt.show(hist['Close'].plot(figsize=(16, 9)))
 
 #Pick a random stock from watchlist
+
 # pull information and show chart on said info
 
 #create a data/calender class
