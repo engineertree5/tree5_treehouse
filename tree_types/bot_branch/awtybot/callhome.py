@@ -21,7 +21,10 @@ def update_status():
     feels = input("TYPE YOUR TWEET BELOW:\n")
     # using tweepy API to update status
     try:
-        api.update_status(status=feels)
+        media = api.media_upload("/Users/MisterFili/Documents/GitHub/tree5_treehouse/tree_types/bot_branch/CHEWY111.png")
+        mediaa = api.media_upload("/Users/MisterFili/Documents/GitHub/tree5_treehouse/tree_types/bot_branch/NOK.png")
+        api.update_status(status=feels, media_ids=[media.media_id,mediaa.media_id])
+        # api.update_status(status=feels)
         print('tweet sent!\n', feels)
     
     except tweepy.TweepError as e:

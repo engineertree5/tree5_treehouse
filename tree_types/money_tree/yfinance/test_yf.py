@@ -21,11 +21,12 @@ def watchlist_moving_avearge(days, today):
     # a 5-day simple moving average is the five-day sum of closing prices divided by five.
         companyMA = f'%.2f' % (temp) #converting to 2 decimal points
         stock_symbol = company.ticker
-        csv_location = f'/Users/MisterFili/Documents/{stock_symbol}.csv'
+        csv_location = f'/Users/MisterFili/Documents/misc_files/{stock_symbol}.csv'
         file_exists = os.path.isfile(csv_location)
         print(f'Here is the {days} day Moving average for {stock_symbol}: {companyMA}')
+        # company.info['shortName'] Full company name 
 
-        with open (f'/Users/MisterFili/Documents/{stock_symbol}.csv', 'a+', newline="") as csvfile:
+        with open (f'/Users/MisterFili/Documents/misc_files/{stock_symbol}.csv', 'a+', newline="") as csvfile:
             fieldnames = ['DATE', 'Ticker', 'MA']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
@@ -34,7 +35,6 @@ def watchlist_moving_avearge(days, today):
             
             writer.writerow({'DATE': today,  'Ticker': company.ticker, 'MA': companyMA})
     print('\nForLoop Over\ncheck csv')
-
 
 # SMA = Sum of data points in the moving average period / Total number of periods
 
@@ -45,6 +45,14 @@ def main():
     watchlist_moving_avearge(5,d1)
 if __name__ == "__main__":
     main()
+
+#flipping_df = dlr_hist.sort_index(axis=0, ascending=False)
+# x = flipping_df.index.values[0]
+# pulling row info (use index)
+
+#label-based indexing using .loc
+# flipping_df.loc['2020-06-12']
+
 
 
 
