@@ -41,3 +41,5 @@ stock_data
 ```
 
 Yup! It's quite easy to get up and running with looking at market data using python. Our next mission is to start analyzing this data so we can make market predictions. For now, get familiar with this module and do some exploaring. 
+
+[UNFINISHED]
