@@ -1,6 +1,6 @@
 # VIEW MARKET DATA WITH PYTHON
 <figure>
-    <img src="media/img/pystock.jpg" alt="tbot image" title="tbot image">
+    <img src="media/img/pystock.jpg" alt="pystock" title="pystock">
 </figure>
 Jumping right in. I'm going to go over how we can look at stock market data by using python. I went on and made a simple twitter bot to tweet stock analytics from my watchlist. We wont go that far in this post. This post is to give you a leg up and get you used to pulling in data on the market
 
