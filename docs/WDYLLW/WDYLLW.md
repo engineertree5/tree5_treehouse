@@ -146,6 +146,9 @@ Beca
 However, there is more work to do before we can get those pretty candles printed on a graph. Because we are going to be using Matplotlib to graph the columns, we do not need the date to be an index anymore. We can remove that by using the `reset_index()` method.
 
 > Pandas reset_index() is a method to reset index of a Data Frame. reset_index() method sets a list of integer ranging from 0 to length of data as index.
+```python
+    df_ohlc.reset_index(inplace=True)
+```
 
 **Before**
 
@@ -169,12 +172,15 @@ Date
 3 2019-07-26  8.705251  8.913226  8.586408  8.913226
 4 2019-08-02  8.903322  8.903322  8.556698  8.556698
 ```
-due to the "interesting" nature of candlesticks with matplotlib we will need to perfom some date conversion. For that we are using `mdates`. As for everything else, its setting up the chart.  
+due to the "interesting" nature of using the candlestick library within matplotlib we will need to perfom some date conversion. For that we are using `mdates`.  
 
 ```python
-    df_ohlc.reset_index(inplace=True)
     df_ohlc['Date'] = df_ohlc['Date'].map(mdates.date2num)
+```
 
+The rest of the code is used to setup and design our chart. Our chart requires two axisis, so we assign candlesticks and EMA data to one `ax1` axis and trading volume data to `ax2` axis. I wont go into great detail as to what each line does but I will recommened that you do some due dilligance and google these methods to get a better understnding of the "how" and "why" 
+
+```python
     ax1 = plt.subplot2grid((6,1), (0,0), rowspan=4, colspan=1, title=f"${stock_pick} STOCK")
     ax2 = plt.subplot2grid((6,1), (5,0), rowspan=1, colspan=1, sharex=ax1, label='Volume')
 
@@ -183,9 +189,10 @@ due to the "interesting" nature of candlesticks with matplotlib we will need to 
     ax1.plot(df.index, df[['50d_EMA']], label='50d_EMA')
     ax1.plot(df.index, df[['20d_EMA']], label='20d_EMA')
     ax2.fill_between(df_volume.index.map(mdates.date2num), df_volume.values, 0) #x and y 
-    ax1.xaxis_date()
+    ax1.xaxis_date() # converts the axis from the raw mdate numbers to dates.
     ax1.legend()
 
     plt.savefig(f'{chart_dir}{stock_pick}.png', bbox_inches='tight')
-    print(chart_dir)
 ```
+
+# 7/5 - SMA & EMA
