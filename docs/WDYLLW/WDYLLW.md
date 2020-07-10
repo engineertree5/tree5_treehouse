@@ -196,3 +196,10 @@ The rest of the code is used to setup and design our chart. Our chart requires t
 ```
 
 # 7/5 - SMA & EMA
+Now we jump over to indicators. Since we have our stock market data generated and we know how to pull whichever stock we want + the time frame, the only thing left is to apply some indicators. First up, **Simple Moving Average**
+
+<figure>
+    <img src="media/img/WDYLLW/IMG_0033.jpg" alt="sma" title="sma">
+</figure>
+
+The SMA is one of many indicators that can help determine if an asset will either continue or reverse a bull or bear trend. Also keep in mind that the SMA is slower to react when compared to other indicators like exponential moving average. 
