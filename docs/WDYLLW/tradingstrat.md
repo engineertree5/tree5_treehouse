@@ -7,6 +7,6 @@ On to the most important piece of any analysis, the formula! To properly chart t
 
 Multiplier: (2 / (Time periods + 1) ) 
 EMA: {Close - EMA(previous day)} x multiplier + EMA(previous day). 
-Here Time period is the number of days you want to look back.
+# Here Time period is the number of days you want to look back.
 
 '''
