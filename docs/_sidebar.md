@@ -8,9 +8,13 @@
 **WDYLLW**
   - [WDYLLW](WDYLLW/WDYLLW.md)
 
-
+**Learning Through Doing**
+  - [Quickstart](ltd/quickstart.md)
+  - [Study Guide](ltd/studyguide.md)
+  - [Bookmarks](ltd/sites.md)
+  - 
 **Side Quest**
-  - [3.14](pi.md)
+  - [Open Notes](opennotes.md)
 
 - **Links**
 - [![Github](https://icongram.jgog.in/simple/github.svg?color=808080&size=16)Github](https://github.com/engineertree5/tree5_treehouse)

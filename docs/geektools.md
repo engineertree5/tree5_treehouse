@@ -7,22 +7,24 @@
 </figure>
 
 **REQUIREMENTS (Mac OSX)**
-* A working computer with macOS installed
-* [GeekTool](https://www.tynsoe.org/v2/geektool/documentation/)
-* basic understanding of the mac terminal
-* Willingness to fail & learn
+* Any version of Mac OS
+* [GeekTool](https://www.tynsoe.org/v2/geektool/documentation/) installed
+* basic understanding of using the mac terminal
+* Willingness to fail and learn
 
-To duplicate the screenshot above you will first need to download and install [GeekTool](https://www.tynsoe.org/v2/geektool/documentation/). Geektool is a macOS application that will let you customize your desktop in a few different ways. You can keep it simple with the date and time or get complex and show how many CPU cores your computer is using at the current time. Whichever pace you move, Geektool is a great way to learn scripting or just improve your desktop cosmetics. 
+To duplicate the screenshot above you will first need to download and install [GeekTool](https://www.tynsoe.org/v2/geektool/documentation/). Geektool is an application that will let you customize your desktop in many different flavors. You can keep it simple with the date and time or get funky like myself show off your design skills or how many CPU cores your computer is using at the current time. However you want to dress up your desktop, Geektool is a great way to learn scripting or just improve your desktop cosmetics. 
 
-Lets get started with the basics and iterate our way through until the end. 
+Lets get started with the basics and iterate our way through what I have posted above. 
 
-The wallpaper was created using Photoshop and the image came from [Mustafah Abdulaziz](http://www.mustafahabdulaziz.com). If you'd like to use this wallpaper you can download it [here](https://imgur.com/a/iwlS20G)
+The wallpaper was created using Photoshop and the image of the woman getting water came from [Mustafah Abdulaziz](http://www.mustafahabdulaziz.com). If you'd like to use this wallpaper you can download it [here](https://imgur.com/a/iwlS20G)
 
 ## Date & Uptime
 
 ?> Vist [GeekTool](https://www.tynsoe.org/v2/geektool/documentation/) for the quick start guide or follow along by using your mac terminal
 
-The day and date was generated using shell commands via the terminal. Every mac comes with the terminal already installed, so if you are using a mac you are good to go (sorry, windows users). To get your terminal open, search for `terminal` under your applications or through finder. Once you have your terminal open type in the following:
+The quickest way to see the power of Geektool is to display the current date and/or time. To do this we will need to understand how to feed our computer the right input to display the day however we'd like, abbreviated, numerical, or whatever.
+
+To pull up the date and time we are going to need to jump to the terminal. by default, every mac comes with a terminal already installed, so if you are using a mac you are good to go (sorry, windows users). To get your terminal open, search for `terminal` under your applications or through finder. Once you have your terminal open type in the following:
 
 ?> The `$` represents the start of a new line within the terminal. DO NOT COPY/TYPE THE `$`
 
