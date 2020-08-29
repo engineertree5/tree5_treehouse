@@ -1,18 +1,26 @@
 # Bookmarks
 
-# Study Guide
 
 <!-- tabs:start -->
 
 #### ** Sites **
 
 <center>Finance</center>
+
 * https://www.lazyfa.com/
   - Quick & FREE way to get a full snapshot of company
 * https://simplywall.st/about
+  - Data and analysis site for companies
+* https://cloudedjudgement.substack.com/
+  - This is a in-depth newsletter presenting researching SaSS products.
+
 
 <center>Dev</center>
-https://softwareengineeringdaily.com/
+
+* https://softwareengineeringdaily.com/
+
+* https://codingandfun.com/
+  - Blog on python for finance!
 
 #### ** Podcast **
 

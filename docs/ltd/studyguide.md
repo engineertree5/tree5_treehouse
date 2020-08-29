@@ -5,7 +5,7 @@
 
 I first started with wanting to understand the technicals. I saw the candlesticks for stock charts but didn't know what the purpose of these candlesticks was or how to use them. So, I started with building a python bot to kill two birds with one stone. The first bird was named python and I wanted to get better a developing and a deeper understanding of the language. The second bird 2 was named Investing and this was the bigger of the two and I'm not even sure if I killed this bird. Either way, I'm looking to get better at investing and using this skill to increase my wealth and eventually leave my job.
 
-Which brings me to now. Now I'm on this investing kick to soak up as much information as possible when it comes to all things investing. Over the past 6 months I've done a significant amount of reading and listening to investors speak about "investing Do's and Don'ts", how they invest, and other strategies. And now I'm actively deploying and tweaking my own investing strategy and principals.
+Which brings me to now. Now I'm on this investing kick to soak up as much information as possible when it comes to all things investing. Over the past 6 months, I've done a significant amount of reading and listening to investors speak about "investing Do's and Don'ts", how they invest, and other strategies. And now I'm actively deploying and tweaking my own investing strategy and principals.
 
 Below is my current investing strategy and principles. Overall, my strategy is to buy and hold for the long term. 
 
@@ -14,6 +14,7 @@ I've recently learned that waiting is the best strategy but also the hardest. As
 
 #### Dollar Cost Averaging - DCA
 Learning about using the DCA strategy has improved my mindset to further spread out my capital overtime and not enter a position all at once. Because I'm using the DCA strategy I'll be able to purchase stocks without having to "wait for the dip". 
+
 #### Stick To Your Trade
 I work as a software engineer and I'm pretty 
 
