@@ -1,4 +1,5 @@
-# 3.14
+# Open Notes
+!> This section is for MY personal notes. Some of these notes may only make sense to me. 
 
 ## SSH PI
 
