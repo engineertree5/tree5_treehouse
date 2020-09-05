@@ -13,6 +13,8 @@
   - Data and analysis site for companies
 * https://cloudedjudgement.substack.com/
   - This is a in-depth newsletter presenting researching SaSS products.
+* https://www.sec.gov/edgar/searchedgar/companysearch.html
+  - EDGAR Electronic Data Gathering, Analysis, and Retrieval system, is the primary system for companies that are publicly traded 
 
 
 <center>Dev</center>
