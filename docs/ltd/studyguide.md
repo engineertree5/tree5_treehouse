@@ -7,10 +7,10 @@ I first started with wanting to understand the technicals. I saw the candlestick
 
 Which brings me to now. Now I'm on this investing kick to soak up as much information as possible when it comes to all things investing. Over the past 6 months, I've done a significant amount of reading and listening to investors speak about "investing Do's and Don'ts", how they invest, and other strategies. And now I'm actively deploying and tweaking my own investing strategy and principals.
 
-Below is my current investing strategy and principles. Overall, my strategy is to buy and hold for the long term. 
+Below is my current investing strategy and principles. Overall, my strategy is to buy and hold quality companies for the long term. Adding to my winners, using DCA to add to my positions over time, and sticking to my strategy. 
 
 #### Use Time
-I've recently learned that waiting is the best strategy but also the hardest. As of recent, I'm starting to see that most successful investors use this tool called time. 
+I've recently learned that waiting and being patient is the best strategy for investors but also the hardest. Looking back from when I first started investing until now. If I had held *most of my positions I would be a richer man today. And that is ok with me. The learning process is just like investing, it will take time.
 
 #### Dollar Cost Averaging - DCA
 Learning about using the DCA strategy has improved my mindset to further spread out my capital overtime and not enter a position all at once. Because I'm using the DCA strategy I'll be able to purchase stocks without having to "wait for the dip". 
@@ -19,13 +19,15 @@ Learning about using the DCA strategy has improved my mindset to further spread 
 I work as a software engineer and I'm pretty 
 
 #### DO NOT PANIC SELL
+The last thing you want to do is have weak hands and sell off your shares with the rest of the market. Yes, I've been apart of panic sell crowd and let my emotions get the best of me. After diving deeper into investing and getting a better understanding of the cyclical nature of the market. This and among other stats gave me a better understanding of why panic selling should be avoided.
 
 #### Cover Your Back First 
-Emergency fund
-Savings
-Rent etc
+When investing, you should assume that at any point you can lose 100% of your investment. This is why you should never invest money that you depend on. Make sure that you have enough money stashed away in your `emergency fund` for 3-6 months. Give yourself enough leeway so your finances wont be on a rollercoaster if an unexpected headwind comes your way. 
+
+My own strategy is to have enough money for a year to cover all expense as if my lifestyle never changed. Once I met this goal I started adding what was going to go into my emergency fund into my investing account. 
 
 # Stock Buying / Research Guide
+I use the below criteria when researching stocks to understand if the company risk level. The list by no means pefect but this is my current strategy when deciding to pull the trigger or not.   
 
 #### Strong Leadership
 Long-term focus
@@ -36,23 +38,4 @@ Long-term focus
 
 # When To Sell
 
-When Should You Sell a Stock?
-#### Better opportunities
-
-Sometimes, there's nothing wrong at all with a company or its stock; there are simply better opportunities elsewhere. We'll consider selling a less attractive stock (even at a loss!) if we think another investment has stronger prospects.
-
-#### Business changes
-
-A new competitive threat emerges or competitors perform better than expected.
-
-#### Valuation
-
-We're all for the long term here, but sometimes, Mr. Market shows our stock too much love. We'll consider selling if a stock's price has run up to a point where it no longer reflects the underlying value of the business.
-
-#### Faulty investment thesis
-
- You should seriously consider selling if it turns out your rationale for buying a stock was flawed, if your valuation was too optimistic, or if you underestimated the risks.
-
-#### It keeps us up at night
-
- Stick with what keeps you comfortable.
+When Should You Sell a Stock? I'm not going to go into great detail here because I felt like I was reinveting the wheel when typing. So i'm going to link you to the `fool.com` reference document. Here you can find great information on when selling a stock would be beneficial to you. [LINK HERE](https://www.fool.com/investing/how-to-invest/stocks/when-to-sell-stocks/)
