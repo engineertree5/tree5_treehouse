@@ -12,3 +12,7 @@ I used this [link](https://medium.com/@pythonpow/remote-development-on-a-raspber
 ## Private Key Cryptography - PKC
 
 Sooooo PKC is the shit! You get TWO EXTREMELY LONG prime numbers - these are going to be your private keys - and combine them. Those combined prime numbers will be your public key. So, now you can assign that prime number to a txt message. Then send it out into the wild, across the internet, into your receivers hands safely. Ah! But keep in mind that in order to read (decrypt) the txt message you need th other large prime number to read it. If another person try’s to read your message they will need the other large prime number (private key) to decrypt the message.... fuckin’ PKC. Cool shit
+
+## Digging through a 10-K
+
+I went ahead and decided to take my investing knowledge to the next level and start looking at company `10-K's`. I believe once you've reached this level of research, there is no turning back. Why look into this document called a 10-k? That is a question I had to ask myself as well.

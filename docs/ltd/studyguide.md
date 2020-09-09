@@ -27,10 +27,10 @@ When investing, you should assume that at any point you can lose 100% of your in
 My own strategy is to have enough money for a year to cover all expense as if my lifestyle never changed. Once I met this goal I started adding what was going to go into my emergency fund into my investing account. 
 
 # Stock Buying / Research Guide
-I use the below criteria when researching stocks to understand if the company risk level. The list by no means pefect but this is my current strategy when deciding to pull the trigger or not.   
+I use the below criteria when researching stocks to understand the company risk level of my investment. The list by no means is perfect and will probably change overtime.   
 
 #### Strong Leadership
-Long-term focus
+Long-term focus on the growth and vision of the company. When looking to invest money into a company it is important for me to find a CEO or management team with a strong focus on the future.
 
 #### Cash on hand
 
@@ -39,3 +39,4 @@ Long-term focus
 # When To Sell
 
 When Should You Sell a Stock? I'm not going to go into great detail here because I felt like I was reinveting the wheel when typing. So i'm going to link you to the `fool.com` reference document. Here you can find great information on when selling a stock would be beneficial to you. [LINK HERE](https://www.fool.com/investing/how-to-invest/stocks/when-to-sell-stocks/)
+
