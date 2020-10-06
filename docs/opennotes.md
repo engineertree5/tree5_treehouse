@@ -15,4 +15,14 @@ Sooooo PKC is the shit! You get TWO EXTREMELY LONG prime numbers - these are goi
 
 ## Digging through a 10-K
 
-I went ahead and decided to take my investing knowledge to the next level and start looking at company `10-K's`. I believe once you've reached this level of research, there is no turning back. Why look into this document called a 10-k? That is a question I had to ask myself as well.
+I went ahead and decided to take my investing knowledge to the next level and start looking at company `10-K's`. I believe once you've reached this level of research, there is no turning back. So, going forward it is about to get nerdy.
+
+Why look into this document called a `10-K`? Well, I'm looking to be a better investor, right? The 10-K and 10-Q offer up important company financials that can show the growth potential of a company and its underlying business segments  - changes in management, areas of concern and competition, current operations, and future plans. It can also do the inverse, show you potential risk and dips in revenue.
+
+As I familiarize myself with the format of `10-K` documents it will be easier to perform deep dives on companies that interest me and my dump truck of cash.
+
+First, let me take a look at a company I'm familiar with, Microsoft. The quickest way to get to the `10-K` or 10-Q is to go to the [SEC EDGAR Database](https://www.sec.gov/edgar/searchedgar/companysearch.html)
+
+### What I find important within A 10-K 
+
+Income Statement - 
