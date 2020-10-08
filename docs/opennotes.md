@@ -21,8 +21,17 @@ Why look into this document called a `10-K`? Well, I'm looking to be a better in
 
 As I familiarize myself with the format of `10-K` documents it will be easier to perform deep dives on companies that interest me and my dump truck of cash.
 
-First, let me take a look at a company I'm familiar with, Microsoft. The quickest way to get to the `10-K` or 10-Q is to go to the [SEC EDGAR Database](https://www.sec.gov/edgar/searchedgar/companysearch.html)
+I'm going to take a look at a company most of us are familiar with, Microsoft. The quickest way to get to the `10-K` or `10-Q` is to go to the [SEC EDGAR Database](https://www.sec.gov/edgar/searchedgar/companysearch.html)
 
-### What I find important within A 10-K 
+?> table created from: https://www.sec.gov/oiea/Article/edgarguide.html
+
+| Document Format           | Description               |
+| ------------------------- | :-------------------------:|
+| 10-K | Annual report – Provides audited annual financial statements, a discussion of material risk factors for the company and its business, and a management’s discussion and analysis of the company’s results of operations for the prior fiscal year.|
+| 10-Q | Quarterly report – Provides unaudited quarterly financial statements, updates regarding material risks that the company faces, and management’s discussion and analysis of the company’s results of operations for the prior fiscal quarter. |
+Quarterly report – Provides unaudited quarterly financial statements, updates regarding material risks that the company faces, and management’s discussion and analysis of the company’s results of operations for the prior fiscal quarter.
+| 8-K | Current report – Discloses material events or information that the company chooses or is required to make public prior to its next scheduled quarterly or annual report. | 
+
+### What I find important within A 10-Q 
 
 Income Statement - 
