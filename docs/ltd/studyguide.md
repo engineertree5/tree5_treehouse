@@ -10,7 +10,7 @@ Which brings me to now. Now I'm on this investing kick to soak up as much inform
 Below is my current investing strategy and principles. Overall, my strategy is to buy and hold quality companies for the long term. Adding to my winners, using DCA to add to my positions over time, and sticking to my strategy. 
 
 #### Use Time
-I've recently learned that waiting and being patient is the best strategy for investors but also the hardest. Looking back from when I first started investing until now. If I had held *most of my positions I would be a richer man today. And that is ok with me. The learning process is just like investing, it will take time.
+I've recently learned that waiting and being patient is the best strategy for investors but also the hardest. When looking back from when I first started investing until recently, boy! If I had held *most of my positions I would be a richer man today. And that is ok with me. The learning process is just like investing, it will take time.
 
 #### Dollar Cost Averaging - DCA
 Learning about using the DCA strategy has improved my mindset to further spread out my capital overtime and not enter a position all at once. Because I'm using the DCA strategy I'll be able to purchase stocks without having to "wait for the dip". 
@@ -33,6 +33,7 @@ I use the below criteria when researching stocks to understand the company risk 
 Long-term focus on the growth and vision of the company. When looking to invest money into a company it is important for me to find a CEO or management team with a strong focus on the future.
 
 #### Cash on hand
+When I'm looking into a company and the finances behind the business. There needs to be enough cash on hand to cover the debt taken out by the company. Meaning, if the company is overloaded with debt and they do not have enough cash to cover said debt. I'm going to take a deep look at the debt, it may be new debt with a low interest rate or it may be high interest debt that is owed back to the borrower soon. Certainly want to steer clear of companies that do not have a clear path to profitability or have too much debt that cannot be covered by cash on hand.
 
 #### Advantages | Technology | Network | Brand | Culture
 
