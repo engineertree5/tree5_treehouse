@@ -14,7 +14,9 @@
 * https://cloudedjudgement.substack.com/
   - This is a in-depth newsletter presenting researching SaSS products.
 * https://www.sec.gov/edgar/searchedgar/companysearch.html
-  - EDGAR Electronic Data Gathering, Analysis, and Retrieval system, is the primary system for companies that are publicly traded 
+  - EDGAR Electronic Data Gathering, Analysis, and Retrieval system, is the primary system for companies that are publicly traded
+* https://www.koyfin.com/home
+  - Free tools to help investors. Portfolio creation, custom charts, and a lot more.
 
 
 <center>Dev</center>
@@ -36,12 +38,12 @@
 <center>Dev</center>
 https://softwareengineeringdaily.com/category/all-episodes/exclusive-content/Podcast/
 
-#### ** Video && Youtube **
+#### ** Video **
 
 <center>Finance</center>
 
 * https://www.youtube.com/channel/UC5cEHfCr6WOE1R1zcohd1IA
-  - Easy to understand Jose's strategy and thinking behind a company
+  - Easy to understand Jose's strategy and thinking behind a company. Really open with his process and how he invest
 * https://www.youtube.com/user/TheMotleyFool
   - Highly recommended for beginners. Most of your questions will be answered here. Not to mentioned they offer great advice for new & existing investors. 
 

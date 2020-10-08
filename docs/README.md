@@ -1,3 +1,5 @@
 # <center>Purpose of EngineerTree5 [here]</center>
 
+I created EngineerTree5 to start tinkering with code and developing solutions for whatever comes to mind. Honestly was looking to some cool shit with code. I did end up creating some really cool projects with the twitter API for python, [tweepy](https://engineertree5.github.io/tree5_treehouse/#/tweepy). Created a voicemail bot, scraped Spotify for a song if you tweeted the user at me, and created analytical tool to scraped yahoo finance for stock market data. Cool shit if I say so myself. **BUT WHAT IS THE PURPOSE**!?
 
+The purpose is exactly that. What sparks my interest? Stocks? Ok, time for a deep dive on investing and lets learn through coding solutions. This is a 2 for 1 situation. I'm learning new coding techniques and I'm learning about the stock market. I'm also becoming a better investor as well. EngineerTree5 is a curious one who like to dive deep on what sparks joy. That joy can range from twitter bots to investing. At the end of the day the purpose is to enjoy the journey. 
