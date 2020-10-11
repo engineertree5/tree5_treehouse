@@ -32,6 +32,13 @@ I'm going to take a look at a company most of us are familiar with, Microsoft. T
 Quarterly report – Provides unaudited quarterly financial statements, updates regarding material risks that the company faces, and management’s discussion and analysis of the company’s results of operations for the prior fiscal quarter.
 | 8-K | Current report – Discloses material events or information that the company chooses or is required to make public prior to its next scheduled quarterly or annual report. | 
 
+### Glossary
+
+| Term           | Definition               |
+| -------------- | :-------------------------:|
+| Accounts Receivable | A short-term asset, usually representing a credit for a completed sale.|
+| Cash | 
 ### What I find important within A 10-Q 
+
 
 Income Statement - 
