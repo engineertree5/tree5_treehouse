@@ -231,3 +231,76 @@ The EMA looks a bit complicated but if you break it down you can start to see ho
 <figure>
     <img src="media/img/WDYLLW/emaformula2.png" alt="emaformula2" title="emaformula2">
 </figure>
+
+# 10/5 - Base, Cups, & Flags
+
+Within the last 7 days a lot of new and interesting knowledge was ingested! Thanks to a *How to Make Money in Stocks*, written by William J. O'Neil. This was a book a twitter user recommended every serious investor read. After reading the first few chapters I can say that is is certainly a book that should be in everyone's study. So, what did I learn? The basics of understanding the technical analysis of stock charts. 
+
+?> I HIGHLY recommend you have a general understanding of candle sticks before moving forward
+
+#### History Rhymes
+The way the stock market acts is like a machine with a bunch of individual companies that make up the internal parts. Every year the machine grows and new parts are swapped out with old ones, parts break, parts get upgraded etc. The thing to keep in mind is that the parts all work the same. This is how/why technical analysis work! When technical analysis is applied to any winning stock the outcome is usually the same. This is because there are know successful price patterns like `cup with handle` that have proven to work time and time again. Price patterns of the past can serve as models for future stocks.
+
+#### Bases
+
+Bases are like stepping stones or hiking bases for a winning stocks next move. Think of them as resting areas where the stock takes a breather before starting the next climb in its journey.  Each base is different so its important to not generalize past performance for future results.
+
+Drawing out "what is a base" really help me drill into my brain what exactly a base is, how its formed, how long do they last, and what signals does it provide. 
+
+<figure>
+    <img src="media/img/WDYLLW/bases.png" alt="emaformula2" title="emaformula2">
+</figure>
+
+Understanding the basic lingo of a new subject is important if you want to be successful on your learning journey. **[segue]** Knowing what a base is when learning about technical analysis will help you understand what you are reading and more importantly, help you make better investment decisions. 
+
+<center> <h2> Left Side of Base: The Sell-Off</h2> </center>
+<figure>
+    <img src="media/img/WDYLLW/baseleftsidesellof.png" alt="emaformula2" title="emaformula2">
+</figure>
+
+<center> <h2> Bottom of Base: A "Floor" of Support Forms as Selling Subsides</h2> </center>
+<figure>
+    <img src="media/img/WDYLLW/basebottom.png" alt="emaformula2" title="emaformula2">
+</figure>
+
+<center> <h2> Right Side of Base: Institutional Buying Returns</h2> </center>
+<figure>
+    <img src="media/img/WDYLLW/baserightside.png" alt="emaformula2" title="emaformula2">
+</figure>
+
+<center> <h2> Buy Point: Breaks Through Former "Ceiling" of Resistance</h2> </center>
+<figure>
+    <img src="media/img/WDYLLW/basebuypoint.png" alt="emaformula2" title="emaformula2">
+</figure>
+
+<center> <b> Key Takeaways</b> </center>
+
+* Think of a base as an actual mountain climb. Take breaks as you make your way to the top... sometimes you have to go down the mountain to go up. 
+
+* The base floor cannot be validated until the prior area of resistance is broken. It may be too early to tell if the bottom of the base has truly formed. Double Bottom anyone? 
+
+* Pay close attention to the BUY volume during the breakout period. As the stock punches through the prior area of resistance the volume needs to up to help with the thesis of buying.
+
+*Good link for reference [HERE](https://www.investors.com/ibd-university/how-to-buy/bases-overview-1/)*
+
+#### Cup With Handle
+The `cup with handle` is one of the most common price patterns to recognize. After discovering and understanding this price pattern I began to recognize it within most charts instantly! The `cup with handle` is one of the most important price patterns. The reason this pattern is so successful is because history rhymes. The quick takeaway from a technical point of view is the decline (left side of the cup) is usually 12%-35% from the high. The handle should slant lower as the remaining sellers exit the stock. 
+
+Again, when we are talking technicals, visuals will always be your best friend. 
+
+
+<center> <h2> Cup With Handle: $SLP Simulation Plus 2020</h2> </center>
+<figure>
+    <img src="media/img/WDYLLW/slpcup.png" alt="emaformula2" title="emaformula2">
+</figure>
+
+There could possibly be too much noise within the $SLP chart but lets break it down so we can turn down the noise. 
+<center> <b> Key Takeaways ... There is A Lot!</b> </center>
+
+* Cup with handle usually last for 3-6 months. Some long as 65 weeks!
+* Formation of handle takes more than one or two weeks & has a downward price drift for shakeout. 
+* Stocks can advanced without forming a handle. 
+* Handle should be above the 10-week moving average line
+* View your stock from a weekly chart 
+* Volatile leaders can plunge 40%-50% in a bull market. Corrections happening more than this have a higher rate of failure. 
+
