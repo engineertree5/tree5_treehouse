@@ -232,7 +232,7 @@ The EMA looks a bit complicated but if you break it down you can start to see ho
     <img src="media/img/WDYLLW/emaformula2.png" alt="emaformula2" title="emaformula2">
 </figure>
 
-# 10/5 - Base, Cups, & Flags
+# 10/5 - Bases, Cups, & Double-Downs
 
 Within the last 7 days a lot of new and interesting knowledge was ingested! Thanks to a *How to Make Money in Stocks*, written by William J. O'Neil. This was a book a twitter user recommended every serious investor read. After reading the first few chapters I can say that is is certainly a book that should be in everyone's study. So, what did I learn? The basics of understanding the technical analysis of stock charts. 
 
@@ -286,7 +286,12 @@ Understanding the basic lingo of a new subject is important if you want to be su
 #### Cup With Handle
 The `cup with handle` is one of the most common price patterns to recognize. After discovering and understanding this price pattern I began to recognize it within most charts instantly! The `cup with handle` is one of the most important price patterns. The reason this pattern is so successful is because history rhymes. The quick takeaway from a technical point of view is the decline (left side of the cup) is usually 12%-35% from the high. The handle should slant lower as the remaining sellers exit the stock. 
 
-Again, when we are talking technicals, visuals will always be your best friend. 
+<center> <h2> Cup With Handle</h2> </center>
+<figure>
+    <img src="media/img/WDYLLW/cupwithhandle.png" alt="emaformula2" title="emaformula2">
+</figure>
+
+Again, when we are talking technicals here. Visuals will always be your best friend. And repetition is the father of learning. So transcribing my notes here further cements my learning.  
 
 
 <center> <h2> Cup With Handle: $SLP Simulation Plus 2020</h2> </center>
@@ -294,13 +299,41 @@ Again, when we are talking technicals, visuals will always be your best friend.
     <img src="media/img/WDYLLW/slpcup.png" alt="emaformula2" title="emaformula2">
 </figure>
 
-There could possibly be too much noise within the $SLP chart but lets break it down so we can turn down the noise. 
+There could possibly be too much noise within the $SLP chart but lets break it down so we can turn down the noise. Lets work our way up from the bottom: 
+
+`Volume` - Notice how the volume begins to dry up right before we see a LARGE buy signal in June. Also take note of the HUGE uptick in volume. This is usually represented by larger investors - fund managers & institutions. 
+
+`Cup with Handle` - we start to see the cup form towards the beginning of May. The base is built out through May to the beginning of June. Then the handle is created towards mid june-ish. After that we see a huge spike in the price and $SLP is out of here!
+
+`Buy Point` - The point appears once all your indicators are validated. Cup with handle, volume support, Relative Price Strength line trending up, Handle abve the 10-week MA, and punching through previous area of resistance. You don't want to get greedy and assume the indicator is around the corner.    
 <center> <b> Key Takeaways ... There is A Lot!</b> </center>
 
 * Cup with handle usually last for 3-6 months. Some long as 65 weeks!
 * Formation of handle takes more than one or two weeks & has a downward price drift for shakeout. 
 * Stocks can advanced without forming a handle. 
+* Look for volume dry-ups near the lows of a price pattern
 * Handle should be above the 10-week moving average line
+* Big volume clues are valuable
+* Find pivot points and watch "volume percent change"
 * View your stock from a weekly chart 
 * Volatile leaders can plunge 40%-50% in a bull market. Corrections happening more than this have a higher rate of failure. 
+* When handles do occur, they almost always form in the upper half of the overall base structure. 
+* Constructive patterns have tight prices
+* Weak cups / Prone to failure = handles that form in the lower half of the overall base structure and/or completely below the stocks 10-week MA line. 
 
+#### Double-Bottom
+A double bottom price pattern is just that. The price will bottom out twice creating the "W" shape within the price pattern. This pattern will not occur as often as the `cup with handle` but will occur frequent enough. 
+
+> Its important that the second bottom of the `W` match the price level of the first bottom or as in almost all cases, clearly under cut by one or two points, creating a checkout of weaker investors. 
+
+<center> <h2> Double-Bottom</h2> </center>
+<figure>
+    <img src="media/img/WDYLLW/doublebottom.png" alt="emaformula2" title="emaformula2">
+</figure>
+
+<center> <b> Key Takeaways</b> </center>
+* Double bottoms may also have handles, although this is not essential.
+* The pivot buy point in a double-bottom is located on the top right side of the W, where the stock is coming up after the second leg down.
+* If the double bottom has a handle, then the peak price of the handle determines the pivot buy point.
+
+#### Flat-Base
