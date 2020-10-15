@@ -38,7 +38,13 @@ Quarterly report – Provides unaudited quarterly financial statements, updates 
 | -------------- | :-------------------------:|
 | Accounts Receivable | A short-term asset, usually representing a credit for a completed sale.|
 | Cash | 
+| EBITDA | Earnings Before Income, Taxes, Deprecation, Amortization
+| NTM | Next Twelve Months
 ### What I find important within A 10-Q 
 
 
 Income Statement - 
+
+Balance Sheet - 
+
+Cash Flow Statement -
