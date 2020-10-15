@@ -291,6 +291,10 @@ The `cup with handle` is one of the most common price patterns to recognize. Aft
     <img src="media/img/WDYLLW/cupwithhandle.png" alt="emaformula2" title="emaformula2">
 </figure>
 
+<figure>
+    <img src="media/img/WDYLLW/cupwithhan.png" alt="emaformula2" title="emaformula2">
+</figure>
+
 Again, when we are talking technicals here. Visuals will always be your best friend. And repetition is the father of learning. So transcribing my notes here further cements my learning.  
 
 
@@ -337,3 +341,18 @@ A double bottom price pattern is just that. The price will bottom out twice crea
 * If the double bottom has a handle, then the peak price of the handle determines the pivot buy point.
 
 #### Flat-Base
+Just like the `cup with handle` price pattern, the flat base must form within an existing uptrend. look for this formation after a breakout from a deep correction. 
+<center> <h2>Flat Base</h2> </center>
+<figure>
+    <img src="media/img/WDYLLW/flatbase.png" alt="emaformula2" title="emaformula2">
+</figure>
+
+<center> <b> Key Takeaways</b> </center>
+
+* Flat base moves straight side-ways in a fairly tight price range for at least 5 or 7 weeks. 
+* No correction more than 10-15%
+
+#### Base on Base
+
+
+* The second base should not encroach much into the price level of th first. Any base that sinks much into the first base is not a proper base-on-base formation. 
