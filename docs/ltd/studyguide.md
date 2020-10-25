@@ -41,3 +41,32 @@ When I'm looking into a company and the finances behind the business. There need
 
 When Should You Sell a Stock? I'm not going to go into great detail here because I felt like I was reinveting the wheel when typing. So i'm going to link you to the `fool.com` reference document. Here you can find great information on when selling a stock would be beneficial to you. [LINK HERE](https://www.fool.com/investing/how-to-invest/stocks/when-to-sell-stocks/)
 
+# Finviz filters
+
+I've been using [Finviz](https://finviz.com/) to filter and search for high quality stocks that fit my investing profile, which is growth! The below are setting I use to find high stocks that have high growth potiential. 
+
+First, I got to the screener tab to get started. 
+
+<center> <b>Valuation Tab</b> </center>
+
+<figure>
+    <img src="media/img/studyguide/descriptive.png" alt="emaformula2" title="emaformula2">
+</figure>
+
+`Sector` - I work with in the tech space so I start by looking at companies that I can relate to or that I can quickly familiarize myself with. so for the sector I select `Technology`
+
+`Industry` - Same as what was mention in the `Sector` section, I work in tech.
+
+`Country` - USA. I'm sticking with the United States until I get a better understanding of risk with international investing. 
+
+[Switching to the fundamental tab...]
+
+<figure>
+    <img src="media/img/studyguide/fundamentals.png" alt="emaformula2" title="emaformula2">
+</figure>
+
+`Forward P/E` - Looking at the forward price-to-earnings (PE) ratio and making sure the company is profitable in the coming quarters. this filter is set to let me know the company is already making money and **SHOULD** continue to do so.
+
+`EPS Growth This Year` - looking for a positive Earning Per Share (EPS) does not gurantee that I'm filtering out a profitable company. Just like when looking at the technical analysis of a chart. It will take many variables to deem your point of view valid before seeing the valid buy point.
+
+`Sales growth qtr over qtr` - Along with looking for EPS growth this year, I'm looking for 
