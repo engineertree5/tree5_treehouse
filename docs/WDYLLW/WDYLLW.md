@@ -355,4 +355,41 @@ Just like the `cup with handle` price pattern, the flat base must form within an
 #### Base on Base
 
 
-* The second base should not encroach much into the price level of th first. Any base that sinks much into the first base is not a proper base-on-base formation. 
+* The two bases can be of any type: `cup with handle`, `cup without handle`, `flat base`, and `double bottom`. the second pattern is offten the `flat base`.
+
+* The second base should not encroach much into the price level of the first base. Any base that sinks much into the first base is not a proper base-on-base formation. 
+
+* The proper buy point is determined by the second base. 
+
+
+# 10/16 - Selection & Timing
+
+
+#### Overhead Supply
+
+Overhead supply is the additional stock that pushes the stock back down. This is represented by a stock that was once doing well, sold off X percentage and is now dropping. Because the stock has dropped so much it leaves the shareholders wanting to sell, BUT not as a loss. They'd like to break even on their investment so they wait for the stock to regain its value, then sell. This pushes the stock back down further as the stock climbs up after a dip. 
+
+* An area of resistance where there is more supply than you think. 
+* After a dip/fall in price the stock will eventually start to trend up and break its previous area of resistance. As it is trending up it will hit the `overhead supply` area. When the stock hits this area it is punched back down even further. 
+
+#### Chapter Review - How To Make Money In Stocks
+
+!> You absolutely do not buy breakouts during a bear market. most of them will fail!
+
+* You can improve your stock selection and overall portfolio performance by learning to read and use charts
+
+* You need **BOTH** Technical analysis (chart reading) and Fundamental analysis, not just one or the other.
+* `Most` price patterns will not work during a bear market. Most will be defective.
+
+
+#### Accelerating Quarterly Earnings
+
+When looking at quarterly earnings you want to see consistent growth for the same quarter YOY from the previous year, NOT the previous month. One of the main reasons for comparing last years quarterly results vs the current is to account for seasonal shopping. When looking at quarterly earnings the percentage change in the EPS is one of the top elements for selecting top tier stock. 
+
+Even the best orgs can have a slow quarter every once in a while. So before selling at the first sign of a bad quarter it is good practice to wait 2 quarters to identify if there is truly a material slowdown. Usually a decline to two-thirds from the previous rate - 50% to 15%
+
+Stocks that you select should have an accelerating percentage increase in current quarterly earnings per share when compared to the prior year's same quarter
+
+ 
+
+avoid quarterly earnings that have little to no change or flat. 

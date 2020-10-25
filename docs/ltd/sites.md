@@ -17,6 +17,8 @@
   - EDGAR Electronic Data Gathering, Analysis, and Retrieval system, is the primary system for companies that are publicly traded
 * https://www.koyfin.com/home
   - Free tools to help investors. Portfolio creation, custom charts, and a lot more.
+* https://www.divestopedia.com/dictionary/tags/valuation
+  - Finance Jargon glossary. Can use to translate a balance sheet
 
 
 <center>Dev</center>
