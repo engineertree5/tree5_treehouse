@@ -381,15 +381,26 @@ Overhead supply is the additional stock that pushes the stock back down. This is
 * You need **BOTH** Technical analysis (chart reading) and Fundamental analysis, not just one or the other.
 * `Most` price patterns will not work during a bear market. Most will be defective.
 
-
+# 10/18 - Look For Big Growth
 #### Accelerating Quarterly Earnings
 
-When looking at quarterly earnings you want to see consistent growth for the same quarter YOY from the previous year, NOT the previous month. One of the main reasons for comparing last years quarterly results vs the current is to account for seasonal shopping. When looking at quarterly earnings the percentage change in the EPS is one of the top elements for selecting top tier stock. 
+?> When looking at quarterly earnings the `percentage change in the EPS` is one of the `top elements` for selecting top tier stocks. 
 
-Even the best orgs can have a slow quarter every once in a while. So before selling at the first sign of a bad quarter it is good practice to wait 2 quarters to identify if there is truly a material slowdown. Usually a decline to two-thirds from the previous rate - 50% to 15%
+When looking at quarterly earnings you want to see consistent growth for the same quarter YOY from the previous year. One of the main reasons for comparing last years quarterly results with the current results is to account for seasonal shopping, cycles, and the likes of.
 
-Stocks that you select should have an accelerating percentage increase in current quarterly earnings per share when compared to the prior year's same quarter
+<center> <h2>Accelerating Quarterly Earnings</h2> </center>
+<figure>
+    <img src="media/img/WDYLLW/oct20/eps.png" alt="emaformula2" title="emaformula2">
+</figure>
 
- 
+Stocks that you select should have an accelerating percentage increase in current quarterly earnings per share when compared to the prior year's same quarter. You should also be looking at the annual growth of the company. That too should be growing at a rate of `25% and above`!
 
-avoid quarterly earnings that have little to no change or flat. 
+Even the best orgs can have a slow quarter every once in a while. So before selling at the first sign of a bad quarter it is good practice to wait 2 quarters to identify if there is truly a material slowdown. Usually a decline of two-thirds from the previous rate - 50% to 15%.
+
+
+#### PE Ratio Is Shite
+
+<center> <h2>You Can't Buy Oceanfront Property For the Same Price You'd Pay For Land A couple of Miles Inland</h2> </center>
+
+
+Earnings, Sales, Return on Equity
