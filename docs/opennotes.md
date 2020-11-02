@@ -40,11 +40,26 @@ Quarterly report – Provides unaudited quarterly financial statements, updates 
 | Cash | 
 | EBITDA | Earnings Before Income, Taxes, Deprecation, Amortization
 | NTM | Next Twelve Months
-### What I find important within A 10-Q 
-
+### What I Find Important Within A 10-Q 
 
 Income Statement - 
 
 Balance Sheet - 
 
 Cash Flow Statement -
+
+## Why Buy $RCM ?
+
+First how did I even find `$RCM`? I started with finviz.com and used their free stock screener. Next, I started to filter down companies that showed 20% growth year over year for their earnings per share `EPS` and positive sales growth. The below is an example of what I used. 
+
+Moving on over to the chart. Because I'm learning a little bit about technical analysis I wanted to see what the charts were telling me.
+
+1. `$RCM` is moving about its 20d MA, 50d MA, and 200d MA.
+
+1. The Relative Strength is showing strong positioning. I also just noticed earning is tomorrow Nov 2nd! Lets wait to see how their earning is reported. 
+
+1. Volume appears to be drying up right before earnings. If their earning are good I will certainly be adding a position.
+
+Looks like `$RCM`is/could have a breakout if earnings goes as planned. I'm not 100% sure about the breakout statement as I'm in the current process of getting better with identifying bases and knowing where support & resistance stands.
+
+So is this a real reason to buy? ... I'm going to go out on a limb here and say yes. However, I'm not really sure what this company's core business is and i'm looking to get a better understanding before Nov 2nd.
