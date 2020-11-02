@@ -397,10 +397,9 @@ Stocks that you select should have an accelerating percentage increase in curren
 
 Even the best orgs can have a slow quarter every once in a while. So before selling at the first sign of a bad quarter it is good practice to wait 2 quarters to identify if there is truly a material slowdown. Usually a decline of two-thirds from the previous rate - 50% to 15%.
 
-
 #### PE Ratio Is Shite
 
 <center> <h2>You Can't Buy Oceanfront Property For the Same Price You'd Pay For Land A couple of Miles Inland</h2> </center>
 
 
-Earnings, Sales, Return on Equity
+?> Earnings, Sales, Return on Equity are 3 things you should look to when searching for your next 100 bagger.
