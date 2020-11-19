@@ -44,7 +44,7 @@ Quarterly report – Provides unaudited quarterly financial statements, updates 
 
 Income Statement - 
 
-Balance Sheet - 
+Balance Sheet - Financial statement that reports a company's `assets`, `liabilities`, and `shareholders equity` at a specific point in time. It is a fianancial statement that provides a snapshot of what a company owns and owes, as well as amount invested by share holders. 
 
 Cash Flow Statement -
 
@@ -63,3 +63,37 @@ Moving on over to the chart. Because I'm learning a little bit about technical a
 Looks like `$RCM`is/could have a breakout if earnings goes as planned. I'm not 100% sure about the breakout statement as I'm in the current process of getting better with identifying bases and knowing where support & resistance stands.
 
 So is this a real reason to buy? ... I'm going to go out on a limb here and say yes. However, I'm not really sure what this company's core business is and i'm looking to get a better understanding before Nov 2nd.
+
+## RCM Update 11/15/2020
+
+
+
+# Balance Sheet info
+!> What a company owns owes and how much shareholders have invested. 
+
+When looking at a balance sheet, the general idea is `A = L + E`. That is, `assets` a company owns = the `liabilities` owed + `equity`. Very simple formula for understanding the balance sheet at a high level. Let's take look at three broad categories that make up the measure the strength of a balance sheet: working capital, asset performance, and capitalization structure.
+
+`Working capital` - or short term liquidity, is a measure of a company's financial strength. Formula current assets  - current liabilities = working capital. Negative working capital. suggest that a company will have trouble paying short-term debt.
+
+`asset performance` - A company's ability to take operational resources, manage them, and produce profitable returns. 
+
+`Capitalization Structure`- The proportion of debt and equity in the capital configuration configuration of a company. 
+
+
+`Non-Current Assets` - assets that are not turned into cash easily. 
+
+# SELL-OF 11/18/2020
+
+A personal reminder that I need to realize that I cannot own them all. There are stocks that I purchased like `$AMWL` that I had no business purchasing. Jumping the gun on a new IPO is what bit me the hardest recently. 3 of the 5 stocks that I sold were recent IPO's that I had little business owning. All of these companies were 
+
+`$BLFS` - Bio Life sciences is actually an ok company that specializes in cryo tech or biopreservation for cells. Think about your Crisper gene editing or Invitae. This company is providing the "pics and shovels" to help get the job done. 
+
+`$GDRX` - Chasing in the healthcare space is a theme here. This company sounded REALLY good on paper and did see good responses from respectable investors. However, why would I invest just because some random investor gave the approval? Why? because I'm blind and I enjoy chasing in the dark. Once `$AMZN` announced they will be getting in the pill subscription bussiness it was a wrap. GDRX dropped 15% on the news and has not stopped falling. I'm not holding/waiting for this stock to rebound. Sold for a loss and moved some money into `$NET`
+
+`$AMWL` - This was a tele health play that I did ZERO research on and purchased the first day it IPO'ed. I got a quick double but held on to it. Should've sold out because I had no business holding this with zero research or any remote evidence of it being a good company. I was chasing.
+
+`$RKT` - housing market should be a profitable place. Why not buy this company without doing any research!? Sure, orders coming up. Another chase that did not pan out. 
+
+`$ATVI` - I went into this investing journey very bullish on the e-sports industry without really knowing how to define the industry. I'm starting to better understand that the industry is a cash cow but its so fragmented it will be hard to by the entire cow. I had to sell $ATVI on the weak performance after earnings. Will I regret it? maybe, but for right now i'm looking for growth so companies with a lower stock market will be the target for my funds.
+
+After selling the above mentioned stocks I put half the cash on the sidelines and added to a few existing positions. I'm currently looking to buy back into BLFS... Why, this may sound crazy buy my girlfriend has been right more than I have on her investing decisions and she is not an investor nor invested!!!. She told me to buy `$TSLA`, `$PINS`, and bio-tech... I did not listen to her TSLA argument but I did take action on PINS but it was a bit late. either way, she is 3 for 3. I'm going to place a buy order of `$BLFS` tomorrow morning and never look back. 
