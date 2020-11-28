@@ -8,7 +8,7 @@
 **WDYLLW**
   - [WDYLLW](WDYLLW/WDYLLW.md)
 
-**Learning Through Doing**
+**Learning By Doing**
   - [Quickstart](ltd/quickstart.md)
   - [Study Guide](ltd/studyguide.md)
   - [Bookmarks](ltd/sites.md)

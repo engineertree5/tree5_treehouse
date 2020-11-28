@@ -39,7 +39,15 @@ Quarterly report – Provides unaudited quarterly financial statements, updates 
 | Accounts Receivable | A short-term asset, usually representing a credit for a completed sale.|
 | Cash | 
 | EBITDA | Earnings Before Income, Taxes, Deprecation, Amortization
+| EV | Enterprise Value
+| Gross margin | Net sales revenue minus its cost of goods sold (COGS). 
 | NTM | Next Twelve Months
+|Operating Margin | Measures how much profit a company makes on a dollar of sales after paying for variable cost of production, such as wage and raw materials, but before paying interest or tax. 
+|Profit Margin| Measures the degree at which a company makes money. 
+|Return on assets - ROA| Is an indicator that measures how well a company utilizes its assets, by determining how profitable a company is relative to its total assets. 
+|Return on Equity - ROE| Measures how the profitability of a corporation in relation to stockholders' equity. 
+| Return on Investment ROI | Measures the amount of return on an investment, relative to the investment's cost.
+
 ### What I Find Important Within A 10-Q 
 
 Income Statement - 
@@ -65,7 +73,7 @@ Looks like `$RCM`is/could have a breakout if earnings goes as planned. I'm not 1
 So is this a real reason to buy? ... I'm going to go out on a limb here and say yes. However, I'm not really sure what this company's core business is and i'm looking to get a better understanding before Nov 2nd.
 
 ## RCM Update 11/15/2020
-
+`$RCM` actually held up pretty well which is kind of surprising. I honestly do not know what I'm doing. I just know i'm trying to get better and one way to do that is by making notes, reviewing, and learning from the past. The market rhymes so you will more than likely see whatever you saw again. 
 
 
 # Balance Sheet info
@@ -97,3 +105,55 @@ A personal reminder that I need to realize that I cannot own them all. There are
 `$ATVI` - I went into this investing journey very bullish on the e-sports industry without really knowing how to define the industry. I'm starting to better understand that the industry is a cash cow but its so fragmented it will be hard to by the entire cow. I had to sell $ATVI on the weak performance after earnings. Will I regret it? maybe, but for right now i'm looking for growth so companies with a lower stock market will be the target for my funds.
 
 After selling the above mentioned stocks I put half the cash on the sidelines and added to a few existing positions. I'm currently looking to buy back into BLFS... Why, this may sound crazy buy my girlfriend has been right more than I have on her investing decisions and she is not an investor nor invested!!!. She told me to buy `$TSLA`, `$PINS`, and bio-tech... I did not listen to her TSLA argument but I did take action on PINS but it was a bit late. either way, she is 3 for 3. I'm going to place a buy order of `$BLFS` tomorrow morning and never look back. 
+
+# What I'm looking for
+* companies with high `gross margins`! The higher the gross margin, the more capital a company retains on each dollar of sales. 
+* Year over year growth. If the company is not growing it better have a good restructuring excuse. I'm looking for companies that showing growth year after year!
+
+# November Portfolio Update
+
+<h3>Top holdings</h3> 
+
+`$PINS` 
+
+`$SE`
+
+`$ROKU` 
+
+`$ETSY` 
+
+`$CRWD` 
+
+`$MGNI` 
+
+`$NET`
+
+`$HUBS` 
+
+`$DOCU`
+
+`$AMD`
+
+November was a great month for my holdings. My portfolio is up 5% for the month and 40% for the year. I had to move some holdings around to make room for a few stocks that I had a higher conviction towards. I'm also looking to reduce the number of stocks that I currently hold. As of right now I have a position in 45 companies and I'm looking to reduce that to 35.  
+
+* I sold `$ADYEY` to free up some cash to buy back a position in `$BLFS`.   
+* SOLD `$DLR` and `$CONE` to start a new position in `$IIPR`. - 3bln market cap with lost of room to run. the gross margins are in the 70+ percentage so there is little overhead that this company needs to provide. Not to mention the lease agreements are for years, not months. Believe the growing of cannabis will be a lucrative business in the next 3-5yrs. 
+* Sold `$FSLY` and `$NTDOY` and started a position in `$LSPD` - my thoughts on e-sports were a bit premature as these gaming companies are not the ones making most of the money. its really one or two publishers that are capitalizing on this craze. I'm pretty much out of the e-sports play and using `$ARKW` as my barometer. 
+* Trimmed some `$MSFT` to add to my winners who were already winning `$NVCR` `$TDOC` `$NET`. - I'm creating bigger positions so when they double the double will be bigger than a few hundred dollars. By adding to the mention 3 names I believe they will be future leaders within their industry. 
+
+Since I've started becoming a more serious investor in June of 2020 I've seen my performance improve month after month. A few things I'm noticing that I feel like I need to get under control is the number of positions I have open. 45 is too much and I need to focus on my winners. It's why I picked them and its why they are still in my portfolio. 
+<center>
+<h3>Which stocks are on the chopping block? and Why?</h3>
+</center>
+
+* `$CRM` - I have Salesforce on the chopping block because of the market cap being at 225bln. For this company to 10x it will probaly take another 10 years. Which isnt bad but it is also not ideal for me. However, I'm a longterm investor and having a company like Salesforce in my portfolio will build strength during market downturns. 
+
+* `$FUTU` - FUTU is a chinese company that is similar to robinhood but located in china. This is the only Chinese stock I own and I purchased this stock because I saw it was mentioned on twitter by a few traders, heard it on a podcast, and I also like the growth story that was tied to it. But at the end of the day I do not know exactly what the company is doing or how they are making money. I've done little to zero due dilligance on the company and if this is a "dud" I can only blame myself. 
+
+* `$RDFN` & `$EXIP` - Real estate stocks. I have too many and I only need one more within my portfolio... maybe. However, i'm torwn between these two companies because of the profile and coverage they are receiving. `$EXPI` - is a international compnay that is in a growth stage that is growing at the same pace, if not faster than `$RDFN`. However, I own Zillow already and why do I need THREE stocks that are all working in the same space!??? 2 have to go and its not Zillow. I'm going to wait 4 qtrs to see who has performed the best before making a final decision. The race between these two is very close and I'm a bit torn as to which company has the best leadership + opportunity... FWIW i'm leaning towards dropping redfin and picking up international holdings. 
+
+* `$DLR` - This is a solid company to have in your portfolio and the growth of this company over 5 years is about the same as `$SPY`. This is not something that I would consider good or bad but I'd say neutral. If I wanted to perform the same as the `$SPY` that is what I would buy. However, I'm looking for growth so I'm going to trade out my `$DLR` shares for `$IIPR`. The stock just broke out of a 2019 resistance and is looking healthy. 3bln dollar company with a lot of room to run in the comming years. Looking to hold for the next 3 years and will compare with the `$SPY` once again. 
+
+* `$PTON` - I dont get the business but I own the stock. That is all I have to say. Will sell when I see an opportunity come around or I'm looking to add to an existing position. 
+
+I'll be down to 40 positions If I sell all of the above, which I hope to do in the coming months as my convictions begin to fade. IF I do start a new position in a company I will say that one of these will need to go. I believe having 35 positions would be ideal for me as an investor at the moment. 5-7 positions that have moved into the larger 100bln+ market cap. while the other 25 are under the 100bln trying to make their way up the ranks. 
