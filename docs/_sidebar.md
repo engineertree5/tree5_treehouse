@@ -9,10 +9,11 @@
   - [WDYLLW](WDYLLW/WDYLLW.md)
 
 **Learning By Doing**
-  - [Quickstart](ltd/quickstart.md)
-  - [Study Guide](ltd/studyguide.md)
-  - [Bookmarks](ltd/sites.md)
-  - 
+  - [Quickstart](lbd/quickstart.md)
+  - [Study Guide](lbd/studyguide.md)
+  - [Bookmarks](lbd/sites.md)
+  - [Predictions](lbd/predict.md)
+  
 **Side Quest**
   - [Open Notes](opennotes.md)
 
