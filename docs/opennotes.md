@@ -157,3 +157,20 @@ Since I've started becoming a more serious investor in June of 2020 I've seen my
 * `$PTON` - I dont get the business but I own the stock. That is all I have to say. Will sell when I see an opportunity come around or I'm looking to add to an existing position. 
 
 I'll be down to 40 positions If I sell all of the above, which I hope to do in the coming months as my convictions begin to fade. IF I do start a new position in a company I will say that one of these will need to go. I believe having 35 positions would be ideal for me as an investor at the moment. 5-7 positions that have moved into the larger 100bln+ market cap. while the other 25 are under the 100bln trying to make their way up the ranks. 
+
+# Python API - Class Building
+https://www.youtube.com/watch?v=xdq6Gz33khQ
+
+* Using the spotify API we will be doing ____
+* First, create a virtualenv for your python version. 
+    * install pipenv [link](https://medium.com/level-up-programming/how-to-use-python-pipenv-in-mac-and-windows-1c6dc87b403e)
+```bash
+pip3 install pipenv # if you don't have brew installed
+```
+* Create virtual environment
+
+```bash
+pipenv install --python 3.7 jupyter
+```
+
+*
