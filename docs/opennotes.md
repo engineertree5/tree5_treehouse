@@ -159,6 +159,8 @@ Since I've started becoming a more serious investor in June of 2020 I've seen my
 I'll be down to 40 positions If I sell all of the above, which I hope to do in the coming months as my convictions begin to fade. IF I do start a new position in a company I will say that one of these will need to go. I believe having 35 positions would be ideal for me as an investor at the moment. 5-7 positions that have moved into the larger 100bln+ market cap. while the other 25 are under the 100bln trying to make their way up the ranks. 
 
 # Python API - Class Building
+
+I went into this exercise to get a better understanding of API's but I already know how API's work. API's are apart of layer 7 and are used
 https://www.youtube.com/watch?v=xdq6Gz33khQ
 
 * Using the spotify API we will be doing ____
@@ -174,3 +176,7 @@ pipenv install --python 3.7 jupyter
 ```
 
 *
+
+# Next Qtr Focus
+- [ ] Tech/dev - Really need to build the base of my technical and development chops
+* Learning Options in June. [Link](https://www.youtube.com/watch?v=7PM4rNDr4oI)
