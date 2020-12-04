@@ -68,9 +68,7 @@ class pyetf(object):
             except IndexError as err:
                 s_name = '*'
                 print(err)
-        return (
-            
-        )
+        return FFd_ma
 
     def get_market_status():
 
