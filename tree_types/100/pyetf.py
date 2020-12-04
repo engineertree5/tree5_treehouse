@@ -49,22 +49,29 @@ class pyetf(object):
         for stock in stock_pick:
             company = yf.Ticker(stock)
             data = company.history(period=f"{self.time_length}d")
+            PS_TTM = company.info["priceToSalesTrailing12Months"]
+            FF2_wkL = company.info["fiftyTwoWeekLow"]
+            FF2_wkH = company.info["fiftyTwoWeekHigh"]
+            FFd_ma = company.info["fiftyDayAverage"]
+            THd_ma = company.info["twoHundredDayAverage"]
             try:
                 s_name = company.get_info()['shortName']
                 print(f'\nPulling data for {s_name}\n***********\n')
                 print(f'{s_name}')
                 print(f'Sector: {company.info["sector"]}')
                 print(f'Industry: {company.info["industry"]}')
-                print(f'52 week low: {company.info["fiftyTwoWeekLow"]}')
-                print(f'52 wk high: {company.info["fiftyTwoWeekHigh"]}')
-                print(f'50d MA: {company.info["fiftyDayAverage"]}')
-                print(f'200d MA: {company.info["twoHundredDayAverage"]}')
+                print('PS/TTM:', ('${:,.2f}'.format(PS_TTM)))
+                print('52 week low:', ('${:,.2f}'.format(FF2_wkL)))
+                print('52 wk high:', ('${:,.2f}'.format(FF2_wkH)))
+                print('50d MA:', ('${:,.2f}'.format(FFd_ma)))
+                print('200d MA:', ('${:,.2f}'.format(THd_ma)))
             except IndexError as err:
                 s_name = '*'
                 print(err)
-        return 
+        return FFd_ma
 
     def get_market_status():
+
         pass
     def get_fa():
         pass
