@@ -29,6 +29,10 @@ class pyetf(object):
     pytef("COMPANY_NAME", "DAYS")
     """
     def __init__(self, stock_pick, time_length ):
+        #        #^ The first variable is the class instance in methods.  
+        #        #  This is called "self" by convention, but could be any name you want.
+        #^ double underscore (dunder) methods are usually special.  This one 
+        #  gets called immediately after a new instance is created.
         """All stocks must have a $STOCK_PICK and time_length (# of Days)
         """
         self.stock_pick = stock_pick #creates an attribute called stock and is assigned to value of stock
@@ -49,39 +53,49 @@ class pyetf(object):
         for stock in stock_pick:
             company = yf.Ticker(stock)
             data = company.history(period=f"{self.time_length}d")
-            PS_TTM = company.info["priceToSalesTrailing12Months"]
-            FF2_wkL = company.info["fiftyTwoWeekLow"]
-            FF2_wkH = company.info["fiftyTwoWeekHigh"]
-            FFd_ma = company.info["fiftyDayAverage"]
-            THd_ma = company.info["twoHundredDayAverage"]
             try:
+                PS_TTM = company.info["priceToSalesTrailing12Months"]
+                FF2_wkL = company.info["fiftyTwoWeekLow"]
+                FF2_wkH = company.info["fiftyTwoWeekHigh"]
+                FFd_ma = company.info["fiftyDayAverage"]
+                THd_ma = company.info["twoHundredDayAverage"]
                 s_name = company.get_info()['shortName']
-                print(f'\nPulling data for {s_name}\n***********\n')
-                print(f'{s_name}')
-                print(f'Sector: {company.info["sector"]}')
-                print(f'Industry: {company.info["industry"]}')
-                print('PS/TTM:', ('${:,.2f}'.format(PS_TTM)))
-                print('52 week low:', ('${:,.2f}'.format(FF2_wkL)))
-                print('52 wk high:', ('${:,.2f}'.format(FF2_wkH)))
-                print('50d MA:', ('${:,.2f}'.format(FFd_ma)))
-                print('200d MA:', ('${:,.2f}'.format(THd_ma)))
+                sector = company.info["sector"]
+                industry = company.info["industry"]
             except IndexError as err:
                 s_name = '*'
                 print(err)
-        return FFd_ma
+        return PS_TTM, FF2_wkH, FF2_wkL, FFd_ma, THd_ma, s_name, sector, industry
 
-    def get_market_status():
+    def get_market_status(self):
+        pass
+    def get_fa(self):        
+        PS_TTM, FF2_wkH, FF2_wkL, FFd_ma, THd_ma, s_name, sector, industry = self.get_stocks()
+        print(f"this is sameple {sector}")
+        return None
+    def get_ta(self):
+        pass
+    def create_ta_charts(self):
+        pass
+    # def get_basic_info(self, get_stocks):
+    #     main = self.main
+    #     print(f'\nPulling data for {s_name}\n***********\n')
+    #     print(f'{s_name}')
+    #     print(f'{sector}')
+    #     print('PS/TTM:', ('${:,.2f}'.format(PS_TTM)))
+    #     print('52 week low:', ('${:,.2f}'.format(FF2_wkL)))
+    #     print('52 wk high:', ('${:,.2f}'.format(FF2_wkH)))
+    #     print('50d MA:', ('${:,.2f}'.format(FFd_ma)))
+    #     print('200d MA:', ('${:,.2f}'.format(THd_ma)))
+    #     return None
 
-        pass
-    def get_fa():
-        pass
-    def get_ta():
-        pass
-    def create_ta_charts():
-        pass
-
+def main():
 
 #### TESTING SECTION ####
-my_stocks = ['SHOP', 'NET', 'TDOC']
-sample = pyetf(my_stocks, 365)
-print(sample.get_stocks())
+    my_stocks = ['SHOP'] #Simple watchlist 
+
+    sample = pyetf(my_stocks, 365) #sample instance of pyetf class
+    print(sample.get_fa())
+    
+    
+main()
