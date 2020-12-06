@@ -77,7 +77,6 @@ class stock_list(object):
         except IndexError as err:
             s_name = '*'
             print(err)
-    
         
     def get_ta(self, data):
         self.data = data

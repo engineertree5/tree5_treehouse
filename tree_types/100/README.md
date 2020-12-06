@@ -12,3 +12,6 @@ So we will be putting all of our code into a class so we can easily add new code
 
 ### Quick Summary
 By default, A user will need to pass in the stock(s) they are looking to get information on and the number of trading days. As of day 1 we are only pulling basic fundamental data. As we look to improve the code more functions will be added as we reach 100 days.  
+
+## Day 5 - Fundamental Analysis 
+I cleaned up the code to function better in the future. If I want to ONLY call on a certain function, say fundamental analysis, I can do that. As of now we have it pulling fundamental analysis on N number of companies. It is basic, yes, but wait until we start getting funky with the technical analysis.  
