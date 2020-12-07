@@ -9,7 +9,6 @@
   - [WDYLLW](WDYLLW/WDYLLW.md)
 
 **Learning By Doing**
-  - [Quickstart](lbd/quickstart.md)
   - [Study Guide](lbd/studyguide.md)
   - [Bookmarks](lbd/sites.md)
   - [Predictions](lbd/predict.md)

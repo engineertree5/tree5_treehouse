@@ -402,4 +402,13 @@ Even the best orgs can have a slow quarter every once in a while. So before sell
 <center> <h2>You Can't Buy Oceanfront Property For the Same Price You'd Pay For Land A couple of Miles Inland</h2> </center>
 
 
-?> Earnings, Sales, Return on Equity are 3 things you should look to when searching for your next 100 bagger.
+?> Earnings, Sales, Return on Equity are 3 things you should look to when searching for your next 100 bagger. The market cap will more than likely need to be under 20bln as well.
+
+# 12/08 No More Positions
+Going into the month of December I did a portfolio review and came to the conclusion that I have too many positions. At the time I had around 45 postions within my portfolio. To me that was too much and I really wanted to consolidate those holdings into a more concentrated bunch. 
+
+less is more, right? If I'm to only own stocks with super high conviction and max upside, I should be on the moon sooner than later. So I started trimming existing positions and adding to existing ones. I believe I got down to 37 which put me 2 away from my goal of 35 total positions (still my goal). 
+
+As I started to "research" and hear and read investors discuss their stocks and new opportunities on the horizon. I got a little anxious and wanted to dip my toe in their suggested stock picks... next thing you know I'm back at 43 positions. 
+
+As of right now, 12/08, I've made a mental mark that I can no longer add a position without having to take away an existing position. I also need to review my positions and put some companies on the chopping block... `$RDFN` `$IIPR` `FTCH` `MELI` `GRWG` If I'm being honest,  I would not sell these company's, only if i had to. I dont see any reason why I should sell these companies so I'm going to keep rocking with these until otherwise. 

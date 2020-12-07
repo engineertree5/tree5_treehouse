@@ -72,7 +72,7 @@ Looks like `$RCM`is/could have a breakout if earnings goes as planned. I'm not 1
 
 So is this a real reason to buy? ... I'm going to go out on a limb here and say yes. However, I'm not really sure what this company's core business is and i'm looking to get a better understanding before Nov 2nd.
 
-## RCM Update 11/15/2020
+### RCM Update 11/15/2020
 `$RCM` actually held up pretty well which is kind of surprising. I honestly do not know what I'm doing. I just know i'm trying to get better and one way to do that is by making notes, reviewing, and learning from the past. The market rhymes so you will more than likely see whatever you saw again. 
 
 
@@ -158,12 +158,10 @@ Since I've started becoming a more serious investor in June of 2020 I've seen my
 
 I'll be down to 40 positions If I sell all of the above, which I hope to do in the coming months as my convictions begin to fade. IF I do start a new position in a company I will say that one of these will need to go. I believe having 35 positions would be ideal for me as an investor at the moment. 5-7 positions that have moved into the larger 100bln+ market cap. while the other 25 are under the 100bln trying to make their way up the ranks. 
 
-# Python API - Class Building
+# Jupyter Notebook setup
 
-I went into this exercise to get a better understanding of API's but I already know how API's work. API's are apart of layer 7 and are used
 https://www.youtube.com/watch?v=xdq6Gz33khQ
 
-* Using the spotify API we will be doing ____
 * First, create a virtualenv for your python version. 
     * install pipenv [link](https://medium.com/level-up-programming/how-to-use-python-pipenv-in-mac-and-windows-1c6dc87b403e)
 ```bash
@@ -175,8 +173,11 @@ pip3 install pipenv # if you don't have brew installed
 pipenv install --python 3.7 jupyter
 ```
 
-*
-
 # Next Qtr Focus
 - [ ] Tech/dev - Really need to build the base of my technical and development chops
+- [ ] Health - I perform better when I feel better. Going to test out fasting for the month of december and check back in in January. I will also not be drinking liquor by will be rewarding myself with wine from time to time. 
+
+- [ ] Lock in Portfolio for 2021. I'm still making changes and will NEED to stop adding positions. I need to add a rule for adding a new position before adding to an existing or selling a current position. 
+
 * Learning Options in June. [Link](https://www.youtube.com/watch?v=7PM4rNDr4oI)
+

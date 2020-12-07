@@ -14,4 +14,81 @@ So we will be putting all of our code into a class so we can easily add new code
 By default, A user will need to pass in the stock(s) they are looking to get information on and the number of trading days. As of day 1 we are only pulling basic fundamental data. As we look to improve the code more functions will be added as we reach 100 days.  
 
 ## Day 5 - Fundamental Analysis 
-I cleaned up the code to function better in the future. If I want to ONLY call on a certain function, say fundamental analysis, I can do that. As of now we have it pulling fundamental analysis on N number of companies. It is basic, yes, but wait until we start getting funky with the technical analysis.  
+I cleaned up the code to function better in the future. If I want to ONLY call on a certain function, say fundamental analysis, I can do that. As of now we have it pulling fundamental analysis on N number of companies. It is basic, yes, but wait until we start getting funky with the technical analysis.
+
+## Day 6 - Check Market status
+The market is not open every day we shouldn't expect it to be. But what days are the market closed? Well, we can figure that out through code. For day 6 of 100 I'm going to be creating the method `get_market_status():`. 
+
+The thought here is to pull in the current date from the `dattime` module. Use the current date and check that against the most recent day of data from the `yfinance` module. IF the current data does not equal the most recent date from `yfinance`, then the market must be closed, or the module api is down.
+
+Let's get started by importing the `datetime` module and creating date variables that match our company data frame
+
+```python
+from datetime import date
+
+today = date.today()
+d_slash = today.strftime("%Y/%m/%d")
+d_dash = today.strftime("%Y-%m-%d")
+
+```
+
+For the next part I'm going to jump to my python (REPEL). You can open up a REPEL window by typing `python3` into the terminal. by using REPEL it makes logic validation easier for me. I also realized that I can do the same with a jupyter notebook but I'm more comfortable at the cmd line. 
+
+```python
+from datetime import date
+import yfinance as yf
+
+today = date.today()
+d_slash = today.strftime("%Y/%m/%d")
+d_dash = today.strftime("%Y-%m-%d")
+f_dash = '2020-12-08' # THIS IS ONE DAY AHEAD OF CURRENT DAY
+
+roku = yf.Ticker("ROKU") # looking at roku stock
+# pulling the last 365 days of roku history
+# invert data to sort current date to oldest
+invert_data = roku.history("365d").sort_index(axis=0, ascending=False)
+
+market_open_check = invert_data.loc[d_dash]
+mkt_check.empty
+
+```
+
+lets look at what I'm doing with the `market_open_check` variable. Within `pandas` there is a method you can use to access a group of rows and columns by label(s) or a boolean array. I'm only looking for the current date and I know that is the first row and column of the dataframe. we can check this by inserting `f_dash` or `d_dash`
+
+```python
+
+>>> invert_data.loc[f_dash]
+Empty DataFrame
+Columns: [Open, High, Low, Close, Volume, Dividends, Stock Splits]
+Index: []
+
+>>> invert_data.loc[d_dash]
+              Open    High    Low   Close   Volume  Dividends  Stock Splits
+Date                                                                       
+2020-12-07  295.65  302.62  289.0  299.98  3679462          0             0
+>>>
+```
+
+One dataframe is empty while the other matched the current date to the most recent row X column date in the dataframe. 
+
+All we need to do is write some logic to catch for days when the market is closed and exit, else continue processing. 
+
+Below is 90% of my function for getting stock data. You can see how I used logic to exit if the market is closed. This will also exit if the company has no data for the given day. Think about the companies that have merged or been acquired... will need to make a note for the future... maybe day 7 fix
+
+```python
+    def get_stocks(self):
+        stock_pick = self.stock_pick # value needs to be passed into function
+        self.get_market_status()
+        for stock in stock_pick:
+            company = yf.Ticker(stock)
+            OHLC_data = company.history(period=f"{self.time_length}d") # we will be using the data var for TA
+        #CHECK TO SEE IF MARKETS ARE OPEN
+            invert_dataframe = OHLC_data.sort_index(axis=0, ascending=False)
+            market_date_check = invert_dataframe.loc[stock_list.d_dash]
+            if market_date_check.empty == True:
+                print('\n!!MARKET CLOSED!!')
+                print('exiting')
+                exit(0)
+            else:
+                pass
+```
