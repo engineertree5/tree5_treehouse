@@ -35,11 +35,21 @@ Long-term focus on the growth and vision of the company. When looking to invest 
 #### Cash on hand
 When I'm looking into a company and the finances behind the business. There needs to be enough cash on hand to cover the debt taken out by the company. Meaning, if the company is overloaded with debt and they do not have enough cash to cover said debt. I'm going to take a deep look at the debt, it may be new debt with a low interest rate or it may be high interest debt that is owed back to the borrower soon. Certainly want to steer clear of companies that do not have a clear path to profitability or have too much debt that cannot be covered by cash on hand.
 
+other categories that below. will add to them as my investing journey continues 
 #### Advantages | Technology | Network | Brand | Culture
 
 # When To Sell
 
 When Should You Sell a Stock? I'm not going to go into great detail here because I felt like I was reinveting the wheel when typing. So i'm going to link you to the `fool.com` reference document. Here you can find great information on when selling a stock would be beneficial to you. [LINK HERE](https://www.fool.com/investing/how-to-invest/stocks/when-to-sell-stocks/)
+
+
+# INVESTING QUICK START
+
+> If you can get through this guide you can do anything
+
+place holder for some quick coding :)
+
+[Starter Kit](https://support.fool.com/hc/en-us/articles/360036177414-The-Motley-Fool-s-investing-style)
 
 # Finviz filters
 
