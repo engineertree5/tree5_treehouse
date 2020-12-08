@@ -38,32 +38,32 @@ class stock_list(object):
         self.time_length = time_length #creates an attribute called time_length and is assigned to value of time_length
 
     def get_market_status(self):
-        pass
-        #The SELF parameter is a reference to the current instance of the class
-        #and is used to access variables that belong to the class.
-        # we will be using the stock the stock attribute to get more data
-                
+        """
+        Check to see if market is open
+        """
+
+        QQQ = yf.Ticker("QQQ")
+        QQQ_data = QQQ.history("365d")
+        invert_dataframe = QQQ_data.sort_index(axis=0, ascending=False)
+        market_date_check = invert_dataframe.loc[stock_list.d_dash]
+        if market_date_check.empty == True:
+            print('\n!!MARKET CLOSED!!')
+            print('exiting')
+            exit(0)
+            # Need to update code to proably target an index and not an individual stock. 
+            # we can do this for day 7 of 100
+        else:
+            pass
+
     def get_stocks(self):
+        self.get_market_status() # check market status
         stock_pick = self.stock_pick # value needs to be passed into function
-        self.get_market_status()
         for stock in stock_pick:
             company = yf.Ticker(stock)
-            OHLC_data = company.history(period=f"{self.time_length}d") # we will be using the data var for TA
-        #CHECK TO SEE IF MARKETS ARE OPEN
-            invert_dataframe = OHLC_data.sort_index(axis=0, ascending=False)
-            market_date_check = invert_dataframe.loc[stock_list.d_dash]
-            if market_date_check.empty == True:
-                print('\n!!MARKET CLOSED!!')
-                print('exiting')
-                exit(0)
-                # Need to update code to proably target an index and not an individual stock. 
-                # we can do this for day 7 of 100
-            else:
-                pass
-            # shortname = company.get_info()['shortName']
             self.get_fa(company)
             # self.get_ta(company)
         pass
+
     def get_fa(self, company):
         """
         Method for processing company data and extracting 
