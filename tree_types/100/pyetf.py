@@ -1,5 +1,5 @@
 #!/usr/local/bin/python3
-
+import csv
 import datetime as dt
 import yfinance as yf # used to pull stock data, thanks yahoo
 import matplotlib.pyplot as plt # used for ploting and charting
@@ -8,7 +8,9 @@ import pandas_datareader.data as web # used to pull in data from the web
 import csv # creating, updating modifying csv files
 import matplotlib.dates as mdates
 from datetime import date
-
+from IPython.core.pylabtools import figsize
+from matplotlib import style
+from mpl_finance import candlestick_ohlc
 ###### SCRIPT SUMMARY ######
 # Purpose of this class(user-defined data structure)
 # is to use the yfinance module and pandas_datareader.data
@@ -27,6 +29,7 @@ class stock_list(object):
     today = date.today()
     d_slash = today.strftime("%Y/%m/%d")
     d_dash = today.strftime("%Y-%m-%d")
+    chart_dir = '/Users/MisterFili/Documents/misc_files/'
     def __init__(self, stock_pick, time_length ):
         #        #^ The first variable is the class instance in methods.  
         #        #  This is called "self" by convention, but could be any name you want.
@@ -57,10 +60,15 @@ class stock_list(object):
 
     def get_stocks(self):
         self.get_market_status() # check market status
-        stock_pick = self.stock_pick # value needs to be passed into function
+        time_length = self.time_length
+        stock_pick = self.stock_pick
         for stock in stock_pick:
+            # try:
             company = yf.Ticker(stock)
-            self.get_fa(company)
+                # self.get_fa(company)
+            self.get_ta(company,time_length)
+            # except Exception as e:
+            #     print(f'\nError with {stock}\n{e}')
             # self.get_ta(company)
         pass
 
@@ -90,17 +98,68 @@ class stock_list(object):
             print('200d MA:', ('${:,.2f}'.format(_200d_ma)))
         except IndexError as err:
             s_name = '*'
-            print(err)
+            print(f'{LVGO} has no company info\n ERROR: {err}')
         
-    def get_ta(self, OHLC_data):
-        self.OHLC_data = daOHLC_datata
-        pass
+    def get_ta(self, company, time_length):
+        """
+        Method for performing technical analysis on given companies.
+        Values needed are the company & time length of market data.
+        """
+        self.company = company
+        self.time_length = time_length
+        today = stock_list.today
+        end = dt.datetime(today.year, today.month,today.day)
+        start = dt.datetime(today.year -1, today.month,today.day)
+
+        short_name = company.get_info()['shortName']
+        company_symbol = company.get_info()['symbol']
+        # df = web.DataReader(f'{company_symbol}', 'yahoo', start=start, end=end)
+        # df.to_csv(f'{company_symbol}.csv')
+        df = pd.read_csv(f'{company_symbol}.csv', parse_dates=True, index_col=0)
+        
+        df['10d_SMA'] = df.Close.rolling(window=10).mean()
+        df['200d_EMA'] = df.Close.ewm(span=200,min_periods=0,adjust=False,ignore_na=False).mean()
+        df['50d_EMA'] = df.Close.ewm(span=50,min_periods=0,adjust=False,ignore_na=False).mean()     
+        df['20d_EMA'] = df.Close.ewm(span=20,min_periods=0,adjust=False,ignore_na=False).mean()
+        df['26d_EMA'] = df.Close.ewm(span=26,min_periods=0,adjust=False,ignore_na=False).mean()          
+        df['21d_EMA'] = df.Close.ewm(span=21,min_periods=0,adjust=False,ignore_na=False).mean()     
+        df['12d_EMA'] = df.Close.ewm(span=12,min_periods=0,adjust=False,ignore_na=False).mean()   
+
+        #calculate the MCAD
+        df['mcad'] = df['12d_EMA'] - df['26d_EMA']
+        df['macdsignal'] = df['mcad'].ewm(span=9, adjust=False).mean()
+
+        #Pull in volume from dataframe
+        df_volume = df['Volume'].resample('10D').sum()
+
+        df_ohlc = df['Adj Close'].resample('W-Fri').ohlc()
+        df_ohlc.reset_index(inplace=True)
+        # don't want date to be an index anymore, reset_index
+        # dates is just a regular column. Next, we convert it
+        df_ohlc['Date'] = df_ohlc['Date'].map(mdates.date2num)
+
+        ax1 = plt.subplot2grid((6,1), (0,0), rowspan=4, colspan=1, title=f"${company_symbol}")
+        # ax2 = plt.subplot2grid((6,1), (5,0), rowspan=1, colspan=1, sharex=ax1, title="MACD")
+        candlestick_ohlc(ax1, df_ohlc.values, width=2, colorup='g', alpha=0.7)
+        
+        # ax2.plot(df.index, df[['macdsignal']], label='Signal')
+        # ax2.plot(df.index, df[['mcad']], label='MCAD')
+        ax2 = plt.subplot2grid((6,1), (5,0), rowspan=1, colspan=1, sharex=ax1, label='Volume')
+        ax2.fill_between(df_volume.index.map(mdates.date2num), df_volume.values, 0)
+        ax1.plot(df.index, df[['21d_EMA']], label='21d_EMA')
+        ax1.plot(df.index, df[['50d_EMA']], label='50d_EMA')
+        ax1.plot(df.index, df[['200d_EMA']], label='200d_EMA')
+        ax1.xaxis_date() # converts the axis from the raw mdate numbers to dates.
+        ax1.legend()
+        ax2.legend()
+        plt.savefig(f'{stock_list.chart_dir}{company_symbol}.png', bbox_inches='tight')
+        plt.show()
     def create_ta_charts(self):
         pass
 
 def main():
 #### TESTING SECTION ####
-    my_stocks = ['SHOP', 'NET', 'AMD'] #Simple watchlist 
+    my_stocks = ['SHOP'] #Simple watchlist 
     f_analysis = stock_list(my_stocks, 365) #we instantiate the stock_list class, passing in mystocks and a set time frame
     f_analysis.get_stocks()
 main()

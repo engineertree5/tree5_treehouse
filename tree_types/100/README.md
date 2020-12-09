@@ -92,3 +92,39 @@ Below is 90% of my function for getting stock data. You can see how I used logic
             else:
                 pass
 ```
+
+# Day 7
+
+Today I moved my code for checking the market status into its own function `get_market_status()`. I also moved it up the stack before any major processing done. This was previously within a `for loop` and that didnt make sense to process the market for each stock. 
+
+```python
+    def get_market_status(self):
+        """
+        Check to see if market is open
+        """
+
+        QQQ = yf.Ticker("QQQ")
+        QQQ_data = QQQ.history("365d")
+        invert_dataframe = QQQ_data.sort_index(axis=0, ascending=False)
+        market_date_check = invert_dataframe.loc[stock_list.d_dash]
+        if market_date_check.empty == True:
+            print('\n!!MARKET CLOSED!!')
+            print('exiting')
+            exit(0)
+            # Need to update code to proably target an index and not an individual stock. 
+            # we can do this for day 7 of 100
+        else:
+            pass
+```
+
+Also added in some exception handling for companies that are no longer listed
+
+'''Python
+except Exception as e:
+    print(f'\nError with {stock}\n{e}')
+
+## EXAMPLE OF ERROR OUTPUT
+
+Error with LVGO
+name 'LVGO' is not defined
+'''
