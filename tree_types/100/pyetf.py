@@ -11,6 +11,7 @@ from datetime import date
 from IPython.core.pylabtools import figsize
 from matplotlib import style
 from mpl_finance import candlestick_ohlc
+import finplot as fplt 
 ###### SCRIPT SUMMARY ######
 # Purpose of this class(user-defined data structure)
 # is to use the yfinance module and pandas_datareader.data
@@ -116,46 +117,40 @@ class stock_list(object):
         # df = web.DataReader(f'{company_symbol}', 'yahoo', start=start, end=end)
         # df.to_csv(f'{company_symbol}.csv')
         df = pd.read_csv(f'{company_symbol}.csv', parse_dates=True, index_col=0)
-        
-        df['10d_SMA'] = df.Close.rolling(window=10).mean()
-        df['200d_EMA'] = df.Close.ewm(span=200,min_periods=0,adjust=False,ignore_na=False).mean()
-        df['50d_EMA'] = df.Close.ewm(span=50,min_periods=0,adjust=False,ignore_na=False).mean()     
-        df['20d_EMA'] = df.Close.ewm(span=20,min_periods=0,adjust=False,ignore_na=False).mean()
-        df['26d_EMA'] = df.Close.ewm(span=26,min_periods=0,adjust=False,ignore_na=False).mean()          
-        df['21d_EMA'] = df.Close.ewm(span=21,min_periods=0,adjust=False,ignore_na=False).mean()     
-        df['12d_EMA'] = df.Close.ewm(span=12,min_periods=0,adjust=False,ignore_na=False).mean()   
+        fplt.candlestick_ochl(df[['Open','Close','High','Low']])
+        ax = fplt.create_plot(company_symbol, rows=1)
 
-        #calculate the MCAD
-        df['mcad'] = df['12d_EMA'] - df['26d_EMA']
-        df['macdsignal'] = df['mcad'].ewm(span=9, adjust=False).mean()
+        # plot candle sticks
+        candles = df[['Open','Close','High','Low']]
+        fplt.candlestick_ochl(candles, ax=ax)
 
-        #Pull in volume from dataframe
-        df_volume = df['Volume'].resample('10D').sum()
+        # # overlay volume on the top plot
+        volumes = df[['Open','Close','Volume']]
+        fplt.volume_ocv(volumes, ax=ax.overlay())
 
-        df_ohlc = df['Adj Close'].resample('W-Fri').ohlc()
-        df_ohlc.reset_index(inplace=True)
-        # don't want date to be an index anymore, reset_index
-        # dates is just a regular column. Next, we convert it
-        df_ohlc['Date'] = df_ohlc['Date'].map(mdates.date2num)
+        #     # put an MA on the close price
+        fplt.plot(df['Close'].rolling(25).mean(), legend='ma-25')
 
-        ax1 = plt.subplot2grid((6,1), (0,0), rowspan=4, colspan=1, title=f"${company_symbol}")
-        # ax2 = plt.subplot2grid((6,1), (5,0), rowspan=1, colspan=1, sharex=ax1, title="MACD")
-        candlestick_ohlc(ax1, df_ohlc.values, width=2, colorup='g', alpha=0.7)
-        
-        # ax2.plot(df.index, df[['macdsignal']], label='Signal')
-        # ax2.plot(df.index, df[['mcad']], label='MCAD')
-        ax2 = plt.subplot2grid((6,1), (5,0), rowspan=1, colspan=1, sharex=ax1, label='Volume')
-        ax2.fill_between(df_volume.index.map(mdates.date2num), df_volume.values, 0)
-        ax1.plot(df.index, df[['21d_EMA']], label='21d_EMA')
-        ax1.plot(df.index, df[['50d_EMA']], label='50d_EMA')
-        ax1.plot(df.index, df[['200d_EMA']], label='200d_EMA')
-        ax1.xaxis_date() # converts the axis from the raw mdate numbers to dates.
-        ax1.legend()
-        ax2.legend()
-        plt.savefig(f'{stock_list.chart_dir}{company_symbol}.png', bbox_inches='tight')
-        plt.show()
-    def create_ta_charts(self):
-        pass
+        # place some buy markers on low wicks
+        lo_wicks = df[['Open','Close']].T.min() - df['Low']
+        df.loc[(lo_wicks>lo_wicks.quantile(0.99)), 'marker'] = df['Low']
+        fplt.plot(df['marker'], ax=ax, color='#4a5', style='^', width=3, legend='BUY')
+
+        # draw some random crap on our second plot
+        # fplt.plot(df['time'], np.random.normal(size=len(df)), ax=ax2, color='#927', legend='stuff')
+        # fplt.set_y_range(-1.4, +3.7, ax=ax2) # hard-code y-axis range limitation
+
+        # restore view (X-position and zoom) if we ever run this example again
+        # fplt.autoviewrestore()
+
+        # we're done
+        fplt.timer_callback(self.save, 0.5, single_shot=True) # wait some until we're rendered
+        # fplt.show()
+    def save(self):
+        # import io
+        # f = io.BytesIO()
+        # fplt.screenshot(f)
+        fplt.screenshot(open('screenshot.png', 'wb'))
 
 def main():
 #### TESTING SECTION ####
