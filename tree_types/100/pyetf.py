@@ -4,13 +4,13 @@ import datetime as dt
 import yfinance as yf # used to pull stock data, thanks yahoo
 import matplotlib.pyplot as plt # used for ploting and charting
 import pandas as pd # used to handle large datasets from stock market
-import pandas_datareader.data as web # used to pull in data from the web
+# import pandas_datareader.data as web # used to pull in data from the web
 import csv # creating, updating modifying csv files
 import matplotlib.dates as mdates
 from datetime import date
 from IPython.core.pylabtools import figsize
 from matplotlib import style
-from mpl_finance import candlestick_ohlc
+# from mpl_finance import candlestick_ohlc
 import finplot as fplt 
 ###### SCRIPT SUMMARY ######
 # Purpose of this class(user-defined data structure)
@@ -60,7 +60,7 @@ class stock_list(object):
             pass
 
     def get_stocks(self):
-        self.get_market_status() # check market status
+        # self.get_market_status() # check market status
         time_length = self.time_length
         stock_pick = self.stock_pick
         for stock in stock_pick:
@@ -100,7 +100,13 @@ class stock_list(object):
         except IndexError as err:
             s_name = '*'
             print(f'{LVGO} has no company info\n ERROR: {err}')
-        
+    def save(self):
+        # self.company_symbol = company_symbol
+        # print(company_symbol)
+        import io
+        f = io.BytesIO()
+        fplt.screenshot(f)
+
     def get_ta(self, company, time_length):
         """
         Method for performing technical analysis on given companies.
@@ -117,7 +123,7 @@ class stock_list(object):
         # df = web.DataReader(f'{company_symbol}', 'yahoo', start=start, end=end)
         # df.to_csv(f'{company_symbol}.csv')
         df = pd.read_csv(f'{company_symbol}.csv', parse_dates=True, index_col=0)
-        fplt.candlestick_ochl(df[['Open','Close','High','Low']])
+        # fplt.candlestick_ochl(df[['Open','Close','High','Low']])
         ax = fplt.create_plot(company_symbol, rows=1)
 
         # plot candle sticks
@@ -134,7 +140,7 @@ class stock_list(object):
         # place some buy markers on low wicks
         lo_wicks = df[['Open','Close']].T.min() - df['Low']
         df.loc[(lo_wicks>lo_wicks.quantile(0.99)), 'marker'] = df['Low']
-        fplt.plot(df['marker'], ax=ax, color='#4a5', style='^', width=3, legend='BUY')
+        # fplt.plot(df['marker'], ax=ax, color='#4a5', style='^', width=3, legend='BUY')
 
         # draw some random crap on our second plot
         # fplt.plot(df['time'], np.random.normal(size=len(df)), ax=ax2, color='#927', legend='stuff')
@@ -144,17 +150,13 @@ class stock_list(object):
         # fplt.autoviewrestore()
 
         # we're done
-        fplt.timer_callback(self.save, 0.5, single_shot=True) # wait some until we're rendered
-        # fplt.show()
-    def save(self):
-        # import io
-        # f = io.BytesIO()
-        # fplt.screenshot(f)
-        fplt.screenshot(open('screenshot.png', 'wb'))
+        # fplt.timer_callback(self.save(), 0.5, single_shot=True) # wait some until we're rendered
+        fplt.show()
+        # fplt.screenshot(open(f'{company_symbol}.png', 'wb'))
 
 def main():
 #### TESTING SECTION ####
-    my_stocks = ['SHOP'] #Simple watchlist 
+    my_stocks = ['SHOP', 'NET'] #Simple watchlist 
     f_analysis = stock_list(my_stocks, 365) #we instantiate the stock_list class, passing in mystocks and a set time frame
     f_analysis.get_stocks()
 main()
