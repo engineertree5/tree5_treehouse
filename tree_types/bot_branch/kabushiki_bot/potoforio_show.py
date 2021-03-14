@@ -8,6 +8,11 @@ import subprocess
 import math
 import gspread
 from os import system
+import json
+import requests
+
+
+
 
 # This script will be used to follow, update, and show my investing progress throughout the year(s) to come. 
 ### HOW DOES IT WORK ###
@@ -46,6 +51,8 @@ def get_portfolio(portfolio):
             sector = company.info['sector']
             symbol = company.info['symbol']
             priceToSalesTrailing12Months = company.info["priceToSalesTrailing12Months"]
+            if priceToSalesTrailing12Months is None:
+                priceToSalesTrailing12Months = 0
             shortName = company.get_info()['shortName']
             fiftyTwoWeekLow = company.info["fiftyTwoWeekLow"]
             fiftyTwoWeekHigh = company.info["fiftyTwoWeekHigh"]
@@ -92,54 +99,53 @@ def get_portfolio(portfolio):
     answer = int(df['total_gain%'].sum(skipna=True))
     total_count = df['PS_TTM'].count()
 
+    pd.set_option('mode.chained_assignment', None) # https://www.dataquest.io/blog/settingwithcopywarning/
     df['overall_%_gain'] ='' # creating a column called overall_%_gain
     df['overall_%_gain'][0] = answer / total_count # w/ use of '({do_math_here})' we insert answer var into the 0 index of column
     
     
     #save results to file
     df.to_csv(f'{portfolio}.csv', index=False)
-    print(df)
+    return df
 
 
-# line = (df['gain%'].append({'gain%':answer}, ignore_index=True))
-def push_csv(file,portfolio):
-    while True:
-        try:  
-            gistfile = file
-            # https://github.com/jdowner/gist module used
-            ## command to run - storing fo##
-            list_cmd = f"gist list | grep \"{gistfile}\""
-            cmd_results = subprocess.check_output(list_cmd, shell=True, stderr=subprocess.PIPE)
-            #subprocess is/was storing the results of the cmd as a byte object
-            #needed to decode the byte object to a string 
-            glist = cmd_results.decode('utf-8')
-            print(f"\nStoring:\n{glist} as var for later use\n")
-            print(f"\nDELETING... {glist}")
-            del_glist = ("gist delete %s" % glist)
-            subprocess.run(del_glist, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, close_fds=True)
-            break
-        except subprocess.CalledProcessError as e:
-            create_cmd = f"gist create --public \"{gistfile}\" /Users/MisterFili/Desktop/{portfolio}.csv"
-            subprocess.check_output(create_cmd, shell=True, stderr=subprocess.PIPE)
-            new_gist = subprocess.check_output(list_cmd, shell=True, stderr=subprocess.PIPE)
-            new_gist_decoded = new_gist.decode('utf-8')
-            print(e)
-            break
-    gistfile = 'all_positions'
-    print(f"creating gist with name \"{gistfile}\"")
-    ######## RENAME DESKTOP FILE TO REUSEABLE VAR
-    create_cmd = f"gist create --public \"{gistfile}\" /Users/MisterFili/Desktop/all_positions.csv"
-    subprocess.check_output(create_cmd, shell=True, stderr=subprocess.PIPE)
-    list_cmd = f"gist list | grep \"{gistfile}\""
-    new_gist = subprocess.check_output(list_cmd, shell=True, stderr=subprocess.PIPE)
-    new_gist_decoded = new_gist.decode('utf-8')
-    print(f"\nNew Gist Name and ID:\n{new_gist_decoded}")
-    print(f"\nView the gist here: https://gist.github.com/engineertree5")
+def del_csv():
+    token = 'a9d6123d8b98a8c90839db62e4d309089cd400fd'
+    list_url = 'https://api.github.com/users/engineertree5/gists'
+    headers = {'Authorization': f'token {token}'}
+    r = requests.get(list_url, headers=headers)
+    cleanup = (r.json())
 
-etrade_portfolio = 'etradeport'
+    for gist in cleanup:
+        files = gist['files']
+        gist_id = gist['id']
+        try:
+            if files['all_positions.csv']['filename'] == 'all_positions.csv':
+                print(f'{gist_id} to be deleted')
+                print('deleteing gist')
+                del_url = f'https://api.github.com/gists/{gist_id}'
+                print(del_url)
+                r = requests.delete(del_url, headers=headers)
+                # print(r.json())
+            else:
+                print('notworking')
+        except KeyError as e:
+            print(f'{e}')
+
+def push_csv():
+    try:  
+        df = pd.read_csv('/Users/MisterFili/Desktop/all_positions.csv')
+        token = 'a9d6123d8b98a8c90839db62e4d309089cd400fd'
+
+        query_url = "https://api.github.com/gists"
+        sample = df.to_csv(index=False)
+        headers = {'Authorization': f'token {token}'}
+        r = requests.post(query_url, headers=headers, data=json.dumps({"public":True,'files':{"all_positions.csv":{"content":sample}}}))
+        print('gist updated')
+    except IndexError as e:
+        print(e)
 all_positions = 'all_positions'
-robinhood_portfolio = 'robinport'
-
 get_portfolio(all_positions) #insert which porfolio you would want to use
-# push_csv(all_positions,all_positions)
+del_csv()
+push_csv()
 #push file to github / back to google_sheets

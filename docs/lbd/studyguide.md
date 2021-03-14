@@ -1,13 +1,7 @@
 # Study Guide
 
-# INVESTING QUICK START
-
-> If you can get through this guide you can do anything
-
-[Starter Kit](https://support.fool.com/hc/en-us/articles/360036177414-The-Motley-Fool-s-investing-style)
-
 # Stock Buying / Research Guide
-I use the below criteria when researching stocks to understand the company risk level of my investment. The list by no means is perfect and will probably change overtime.   
+I use the below criteria when researching stocks to understand the company risk level to better protect my investment $$$. The list by no means is perfect and will probably change overtime.
 
 #### Strong Leadership
 Long-term focus on the growth and vision of the company. When looking to invest money into a company it is important for me to find a CEO or management team with a strong focus on the future.
@@ -17,9 +11,20 @@ When I'm looking into a company and the finances behind the business. There need
 
 #### Revenue
 
+<details>
+<summary> Investing Rules </summary>
 
-other categories that below. will add to them as my investing journey continues 
+- [ ] Look at stocks objectively
+- [ ] Know current market conditions. Are we in a uptrend, downtrend, or chop fest?
+- [ ] 25 <b>CORE</b> positions
+- [ ] Hold for 5 years - Until the story changes
+- [ ] Lean towards small caps and 10x opportunities
+- [ ] Know what you are buying - <b>RESEARCH FIRST </b>
+- [ ] Hold during price swings which are expected. You are not a seasoned trader so dont try to time a damn thing. 
+- [ ] Target Leaders / Innovators 
+- [ ] Have a reason to sell / Bear case
 
+</details>
 #### Advantages | Technology | Network | Brand | Culture
 
 #### When To Sell
