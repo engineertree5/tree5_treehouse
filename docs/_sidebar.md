@@ -7,10 +7,11 @@
 **WDYLLW**
   - [WDYLLW](WDYLLW/WDYLLW.md)
 
-**Learning By Doing**
+**Learn By Doing**
   - [Study Guide](lbd/studyguide.md)
   - [Bookmarks](lbd/sites.md)
   - [Predictions](lbd/predict.md)
+  - [Books](book.md)
 
 **Side Quest**
   - [Open Notes](opennotes.md)
