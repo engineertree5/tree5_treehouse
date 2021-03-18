@@ -1,6 +1,6 @@
 # Books
 
-# 100 Baggers by Christopher Mayer - 04/13/2021
+# 100 Baggers by Christopher Mayer - 03/13/2021
 
 ## Why buy/read the book? - Chapters 1-4
 
