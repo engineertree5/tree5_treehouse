@@ -2,7 +2,7 @@
 
 # 100 Baggers by Christopher Mayer - 03/13/2021
 
-## Why buy/read the book? - Chapters 1-4
+## Why buy/read the book? - Chapters 1-3
 
 > This book is about 100-baggers. These are stocks that return $100 for every $1 invested. that means a $10,00 investment turns into $1,000,000.
 
@@ -19,5 +19,10 @@ The first few pages of this book are filled with facts and quotes from Thomas Ph
 
 > One can argue every sale is a confession of error, and the shorter the time you've held the stock, the greater the error in buying it. -Thomas Phelps
 
-Chapter 2 focused on success stories from investors who were able to buy right and sit tight. The stories were nice but I chalk all that up as hindsight. Everything looks good when you talk about the past in the future. Chapter 3 was certainly better than 2. This chapter covered the coffee-can portfolio. This is an investing strategy where you place stock(s) in a "coffee-can" and don't touch it. The idea here is to protect you against yourself -- from the emotions and volatility that make you buy or sell at the wrong times. A few examples followed of a successful mutual, MIT, that held had an average holding period of 27 years! MIT also went on to outperform the stock market. Overtime your best bet is to bet on the overall stock market. The book goes to point out 
+Chapter 2 focused on success stories from investors who were able to buy right and sit tight. Buying and holding a stock sounds simple until you try it. The stories that were discussed highlighted the hard part of holding but also the rewarding. But the stories were more so reflections, so I chalk 'em all as hindsight being 20/20. Everything looks good when you talk about the past. 
 
+> know what you own and then really own it, as you would a rental property. Then go about your life without all the baggage and worry that comes from sweating over the data-today or month-to-month to month value of your portfolio. 
+
+Chapter 3 sparked more excitement for me than chapter 2. 3 covered the different kinds of coffee-can portfolios and a few 100-bagger use-cases. The coffee-can portfolio is an investing strategy where you place stock(s) in a "coffee-can" and don't touch it for an extended period. The idea here is to protect you against yourself -- from the emotions and volatility that make you buy or sell at the wrong times. A few examples of successful coffee-can portfolios followed. An example that I found interesting was of a successful mutual fund, MIT, that held had an average holding period of 27 years! MIT also went on to outperform the stock market. Buy right and sit tight, right? Over time, your best bet is to bet on the overall stock market. The book goes to point out 
+
+> You must pick a compelling story and you must use money you can afford to lose because you must be willing to risk it all. ALL OF IT.
