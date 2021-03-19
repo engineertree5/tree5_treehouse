@@ -1,4 +1,4 @@
-Symbol,market_cap,purchase_price,market_close,total_gain%,PS_TTM,50d_ma,200d_ma,above_50dma,above_200dma,overall_%_gain
+Symbol,market_cap,purchase_price,market_close,total_gain,PS_TTM,50d_ma,200d_ma,above_50dma,above_200dma,overall_%_gain
 ACUIF,771.55M,11.17,14.55,30.26,0.0,19.24,9.26,False,True,8.58
 ADSK,58.95B,299.41,268.11,-10.45,15.55,288.68,268.57,False,False,
 AMD,98.18B,92.29,81.05,-12.18,10.06,86.83,85.94,False,False,
