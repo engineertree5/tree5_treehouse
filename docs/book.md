@@ -2,7 +2,7 @@
 
 # 100 Baggers by Christopher Mayer - 03/13/2021
 
-## Why buy/read the book? - Chapters 1-3
+## Chapters 1-3
 
 > This book is about 100-baggers. These are stocks that return $100 for every $1 invested. that means a $10,00 investment turns into $1,000,000.
 
@@ -26,3 +26,5 @@ Chapter 2 focused on success stories from investors who were able to buy right a
 Chapter 3 sparked more excitement for me than chapter 2. 3 covered the different kinds of coffee-can portfolios and a few 100-bagger use-cases. The coffee-can portfolio is an investing strategy where you place stock(s) in a "coffee-can" and don't touch it for an extended period. The idea here is to protect you against yourself -- from the emotions and volatility that make you buy or sell at the wrong times. A few examples of successful coffee-can portfolios followed. An example that I found interesting was of a successful mutual fund, MIT, that held had an average holding period of 27 years! MIT also went on to outperform the stock market. Buy right and sit tight, right? Over time, your best bet is to bet on the overall stock market. The book goes to point out 
 
 > You must pick a compelling story and you must use money you can afford to lose because you must be willing to risk it all. ALL OF IT.
+
+

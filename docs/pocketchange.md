@@ -2,7 +2,15 @@
 
 # Buys
 
-## 03/12/2020 - $CARA 
+## 04/13/2021 - $MKTY
+
+MTI is engaged in the design, manufacture, and sale of test and measurement instruments and systems. It is also in the cryptocurrency market currently building out eco-friendly mining operations. eco-datacenters are on the plans as well but nothing has broke ground yet. 
+
+## 03/29/2021 - $JYNT
+
+## 04/09 - XPEL
+
+## 03/12/2021 - $CARA 
 
 <center>
 <figure>
@@ -44,8 +52,11 @@ I also did a quick twitter thread on the company which can be found [**here**](h
 
 ## 3/10/2021 $MEDS
 
+I was long $MEDS as I saw this company from a stock screen that I ran. The growth potiental of this company looked exponetial to the upside IF they continued to deliver on what they promised. You can guess that they did NOT deliever on what they publicly stated which rubbed me the wrong way after doing research on the company. 
+
 # SWING TRADES
 
 # INTERMEDIATE MISTAKES
 
 ## Set & Setting - March sell-off 2021
+
