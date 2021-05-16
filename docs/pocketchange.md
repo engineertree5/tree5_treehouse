@@ -2,9 +2,63 @@
 
 # Buys
 
+
+## 05/17/2021 - $SMED - Sharps Compliance Corp. 
+
+Sharps Compliance provides medial, pharmaceutical, and hazardous waste management services. Their services range from hazardous drug spill for chemotherapy to disposal & transportation of medical products like needles, syringes, and other used healthcare products. 
+
+SMED is a leader (small) in medical waste solutions, currently serving a 2B market. Market consistent of two pillars - `Medical waste from small to medium size generators` & `unused medications`. Obviously there is a C19 play here but that is not something I'd focus on. I see opportunity in this company to start working with clinical trials, sports medicine facilities, and further expand their current market reach, which they are well positioned to do. 
+
+<center>Professional Market</center>
+
+The professional market consist of dental, veterinarian, physicians, labs, urgent care, surgery centers, dialysis centers, and funeral homes. there is a `~700M market opportunity` within the professional market
+
+<center>Long-Term Care Market</center>
+
+Long-Term Care Market seems to be untapped. Only serving 3 franchises (customers) at the moment which leaves for a `~85M market opportunity`. Not to mention the again population. 
+
+<center>Retail Pharmacy Market</center>
+
+SMED currently serves 69% of retail immunizing pharmacies! CVS, RiteAid, and RediClinic
+
+<center>Unused Medications Market Opportunity</center>
+
+SMED unused medication revenue increased from 1.3M in 2014 to 9.2M in 2020. that is 9x in 6 years! This is estimated to be a `~1B market opportunity` with a lot of growth with the opioid epidemic coming to a head. SMED has these special trash bin stations that individuals can dump their unused medications into. These are currently in pharmacies, LTC facilities, narcotic treatment programs, and gov local law enforcement. This gives SMED a recurring revenue opportunity! They also have an option for users to mail-in unused medication. 
+
+> Valuation as of 5/17
+
+|VALUATION | XXX |
+|-----------|---|
+|market cap|262.9M |
+|**ROE**| 30.8% |
+|ROI| 7.20% |
+|ROA| 16.80% |
+|Sales Q\Q | 164.40 |
+|**EPS** Q\Q | 516.60 |
+|**Profit Margin** | 14.20% |
+| Oper. Margin | 15.70% |
+| **Gross Margin** | 38.20% |
+| **P/S** | 3.74 |
+| P/E | 27.2 |
+
+
+
 ## 04/13/2021 - $MKTY
 
-MTI is engaged in the design, manufacture, and sale of test and measurement instruments and systems. It is also in the cryptocurrency market currently building out eco-friendly mining operations. eco-datacenters are on the plans as well but nothing has broke ground yet. 
+MTI Instruments, long known as the creators of industry leading aircraft engine maintenance diagnostic systems. Is engaged in the design, manufacture, and sale of test and measurement instruments and systems. They are also in the cryptocurrency mining business powered by renewable energy. eco-datacenters are on the plans as well but nothing has broke ground yet. 
+
+MTI has been around since 
+
+Their key market drivers are `PBS` which focuses on Freight, Military, Test Cell, and commercial. The other Drive is `instruments` which focus on 5G Deployment, semiconductors, Material Manufacturing. 
+
+For their aero space tools for vibration diagnostics. This helps identify vibration sources and onboard spectral analysis find potential problems before they occur, helps identify concerns before they become safety risks in-flight situations. With unique tachometer signal conditioning circuitry, speed signals from all engine types, as well as tachometer generators, add a higher level of diagnostics for users of MTI instruments. 
+
+New vertical solutions coming for 2021 and beyond! EV battery manufacturing, Industrial material manufacturing, semiconductors. 
+
+<center> LINKS </center>
+
+[PBS-4100+](https://mtiinstruments.com/applications/portable-vibration-balancing-system-simplifies-jet-engine-testing/) - Good description of what the use case for some of MTI's instruments would be used for. 
+
 
 ## 03/29/2021 - $JYNT
 
