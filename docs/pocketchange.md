@@ -5,9 +5,21 @@
 
 ## 05/17/2021 - $SMED - Sharps Compliance Corp. 
 
+<figure>
+    <img src="media/img/buys/smed/smed_logo.png" alt="smed" title="smed">
+</figure>
+
 Sharps Compliance provides medial, pharmaceutical, and hazardous waste management services. Their services range from hazardous drug spill for chemotherapy to disposal & transportation of medical products like needles, syringes, and other used healthcare products. 
 
+<figure>
+    <img src="media/img/buys/smed/smed_market.png" alt="smed" title="smed">
+</figure>
+
 SMED is a leader (small) in medical waste solutions, currently serving a 2B market. Market consistent of two pillars - `Medical waste from small to medium size generators` & `unused medications`. Obviously there is a C19 play here but that is not something I'd focus on. I see opportunity in this company to start working with clinical trials, sports medicine facilities, and further expand their current market reach, which they are well positioned to do. 
+
+<figure>
+    <img src="media/img/buys/smed/smed_biz.png" alt="smed" title="smed">
+</figure>
 
 <center>Professional Market</center>
 
@@ -23,7 +35,16 @@ SMED currently serves 69% of retail immunizing pharmacies! CVS, RiteAid, and Red
 
 <center>Unused Medications Market Opportunity</center>
 
-SMED unused medication revenue increased from 1.3M in 2014 to 9.2M in 2020. that is 9x in 6 years! This is estimated to be a `~1B market opportunity` with a lot of growth with the opioid epidemic coming to a head. SMED has these special trash bin stations that individuals can dump their unused medications into. These are currently in pharmacies, LTC facilities, narcotic treatment programs, and gov local law enforcement. This gives SMED a recurring revenue opportunity! They also have an option for users to mail-in unused medication. 
+<figure>
+    <img src="media/img/buys/smed/smed_unused.png" alt="smed" title="smed">
+</figure>
+
+SMED unused medication revenue increased from `1.3M in 2014 to 9.2M in 2020`. that is 9x in 6 years! This is estimated to be a `~1B market opportunity` with a lot of growth with the opioid epidemic coming to a head. The way Sharp Compliance collects medications & unused drugs is by using these special trash bin stations that individuals can dump their unused medications into. These are currently in pharmacies, LTC facilities, narcotic treatment programs, and with law enforcement stations. This gives SMED a recurring revenue opportunity! They also have an option for users to mail-in unused medication if they cannot go to a pharmacy or other drop-off location.  
+
+<figure>
+    <img src="media/img/buys/smed/smed_recurr.png" alt="smed" title="smed">
+</figure>
+
 
 > Valuation as of 5/17
 
