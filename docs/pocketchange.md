@@ -9,7 +9,7 @@
     <img src="media/img/buys/smed/smed_logo.png" alt="smed" title="smed">
 </figure>
 
-Sharps Compliance provides medial, pharmaceutical, and hazardous waste management services. Their services range from hazardous drug spill for chemotherapy to disposal & transportation of medical products like needles, syringes, and other used healthcare products. 
+[Sharps Compliance](https://investor.sharpsinc.com/static-files/16fd2947-d94f-40ba-ad0a-570bf2e8d177) provides medial, pharmaceutical, and hazardous waste management services. Their services range from hazardous drug spill for chemotherapy to disposal & transportation of medical products like needles, syringes, and other used healthcare products. 
 
 <figure>
     <img src="media/img/buys/smed/smed_market.png" alt="smed" title="smed">
@@ -62,7 +62,7 @@ SMED unused medication revenue increased from `1.3M in 2014 to 9.2M in 2020`. th
 | **P/S** | 3.74 |
 | P/E | 27.2 |
 
-
+I've started a small position in `$SMED` and plan to add to this companies continue to perform. As of now it looks like they plan on taking advantage of C19 funds and do some consolidation within the industry. I'm liking the recent performance of this company and looking to see this one grow slowly into a full position. 
 
 ## 04/13/2021 - $MKTY
 
