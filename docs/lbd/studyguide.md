@@ -3,12 +3,6 @@
 # Stock Buying / Research Guide
 I use the below criteria when researching stocks to understand the company risk level to better protect my investment $$$. The list by no means is perfect and will probably change overtime.
 
-#### Strong Leadership
-Long-term focus on the growth and vision of the company. When looking to invest money into a company it is important for me to find a CEO or management team with a strong focus on the future.
-
-#### Cash on hand
-When I'm looking into a company and the finances behind the business. There needs to be enough cash on hand to cover the debt taken out by the company. Meaning, if the company is overloaded with debt and they do not have enough cash to cover said debt. I'm going to take a deep look at the debt, it may be new debt with a low interest rate or it may be high interest debt that is owed back to the borrower soon. Certainly want to steer clear of companies that do not have a clear path to profitability or have too much debt that cannot be covered by cash on hand.
-
 #### Revenue
 
 <details>
@@ -25,7 +19,6 @@ When I'm looking into a company and the finances behind the business. There need
 - [ ] Have a reason to sell / Bear case
 
 </details>
-#### Advantages | Technology | Network | Brand | Culture
 
 #### When To Sell
 
@@ -61,7 +54,7 @@ Sit tight and stick to your plan and core holdings.
 #### Write and log research
 I'd like to start taking the time to write out research 
 
-# Stocks on Chopping Block
+# Stocks on Chopping Block (2021)
 
 Although these stocks are on the chopping block I DO NOT think I'm going to sell them any time soon. These are stocks that I would sell IF I need capital for another investment.  Identifying the stocks to put on the chopping block was hard enough. To sell a winner (most of them are) is not an easy decision to make. Either way, I have these stocks on a chopping block to make room for other positions. At the time of writing this - 12/26/2020 - the market is red host and a lot of companies are trading at fairly high valuations. 
 

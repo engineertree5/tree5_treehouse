@@ -201,3 +201,13 @@ The last thing you want to do is have weak hands and sell off your shares with t
 When investing, you should assume that at any point you can lose 100% of your investment. This is why you should never invest money that you depend on. Make sure that you have enough money stashed away in your `emergency fund` for 3-6 months. Give yourself enough leeway so your finances wont be on a rollercoaster if an unexpected headwind comes your way. 
 
 My own strategy is to have enough money for a year to cover all expense as if my lifestyle never changed. Once I met this goal I started adding what was going to go into my emergency fund into my investing account. 
+
+
+# Stocks on Chopping Block (2021)
+
+Although these stocks are on the chopping block I DO NOT think I'm going to sell them any time soon. These are stocks that I would sell IF I need capital for another investment.  Identifying the stocks to put on the chopping block was hard enough. To sell a winner (most of them are) is not an easy decision to make. Either way, I have these stocks on a chopping block to make room for other positions. At the time of writing this - 12/26/2020 - the market is red host and a lot of companies are trading at fairly high valuations. 
+
+`$RDFN / $EXPI` - I have a total of 3 real estate plays and for me that is 2 too many. I'd like to be able to know which one of the companies `$EXPI` `$RDFN` `$Z`... As I was typing this I've come to realize that the real estate market is a Trillion dollar market. The real competition in this space are the dinosaurs guarding it. 
+
+`$HUB` - Let the leaders lead. `$CRM` Has this space on lock and I'm not looking to see 
+
