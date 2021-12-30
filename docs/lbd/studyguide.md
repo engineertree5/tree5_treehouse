@@ -53,12 +53,3 @@ Sit tight and stick to your plan and core holdings.
 
 #### Write and log research
 I'd like to start taking the time to write out research 
-
-# Stocks on Chopping Block (2021)
-
-Although these stocks are on the chopping block I DO NOT think I'm going to sell them any time soon. These are stocks that I would sell IF I need capital for another investment.  Identifying the stocks to put on the chopping block was hard enough. To sell a winner (most of them are) is not an easy decision to make. Either way, I have these stocks on a chopping block to make room for other positions. At the time of writing this - 12/26/2020 - the market is red host and a lot of companies are trading at fairly high valuations. 
-
-`$RDFN / $EXPI` - I have a total of 3 real estate plays and for me that is 2 too many. I'd like to be able to know which one of the companies `$EXPI` `$RDFN` `$Z`... As I was typing this I've come to realize that the real estate market is a Trillion dollar market. The real competition in this space are the dinosaurs guarding it. 
-
-`$HUB` - Let the leaders lead. `$CRM` Has this space on lock and I'm not looking to see 
-

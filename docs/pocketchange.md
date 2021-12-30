@@ -125,6 +125,8 @@ I also did a quick twitter thread on the company which can be found [**here**](h
 
 ## 3/12/2021 $VERI
 
+Sold ---- I've since bought back into $VERI. I like what the company is doing in the advertising and AI space. 
+
 ## 3/10/2021 $MEDS
 
 I was long $MEDS as I saw this company from a stock screen that I ran. The growth potiental of this company looked exponetial to the upside IF they continued to deliver on what they promised. You can guess that they did NOT deliever on what they publicly stated which rubbed me the wrong way after doing research on the company. 
